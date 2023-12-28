@@ -151,14 +151,14 @@ ul.task-list li input[type="checkbox"] {
 <p>Throughout this course I created a handful of visualizations that, looking back on, seem worth sharing. The first of which, depicted above, shows a normally distributed mass shifting across periodic boundaries on the left and right hand sides as it slowly diffuses and spreads out. There’s nothing deep about this, I just thought the visualization looks nice.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../assets/img/2021-03-20/gibbs-phenomena.png" class="lightbox" title="A rectangular distribution of mass is shown in multiple iterations where the edges start to rapidly oscillate due to Gibbs phenomenon in a way that doesn’t reflect what would really happen in reality (the rectangle would just move to the side)." data-gallery="quarto-lightbox-gallery-1"><img src="../assets/img/2021-03-20/gibbs-phenomena.png" class="img-fluid figure-img"></a></p>
+<p><a href="../assets/img/2021-03-20/gibbs-phenomena.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1" title="A rectangular distribution of mass is shown in multiple iterations where the edges start to rapidly oscillate due to Gibbs phenomenon in a way that doesn’t reflect what would really happen in reality (the rectangle would just move to the side)."><img src="../assets/img/2021-03-20/gibbs-phenomena.png" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">A rectangular distribution of mass is shown in multiple iterations where the edges start to rapidly oscillate due to Gibbs phenomenon in a way that doesn’t reflect what would really happen in reality (the rectangle would just move to the side).</figcaption><p></p>
 </figure>
 </div>
 <p>One of the concepts introduced in this course was <a href="https://en.wikipedia.org/wiki/Gibbs_phenomenon">Gibbs phenomenon</a> which is what happens in a variety of contexts, the most popular of which being when one either attempts to approximate a square distribution through Fourier decomposition, or when one attempts to propogate a square distribution of mass over a discretized model of space. The result is that when the movement does not exactly line up with the discretization of space, the approximation of how much mass is at each discrete point in space can go quite haywire.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../assets/img/2021-03-20/reaction-with-carrying-capacity.png" class="lightbox" title="A normal distribution is shown “puffing up” after each iteration, eventually appearing as though it has puffed up against an upper limit past which it cannot puff anymore" data-gallery="quarto-lightbox-gallery-2"><img src="../assets/img/2021-03-20/reaction-with-carrying-capacity.png" class="img-fluid figure-img"></a></p>
+<p><a href="../assets/img/2021-03-20/reaction-with-carrying-capacity.png" class="lightbox" data-gallery="quarto-lightbox-gallery-2" title="A normal distribution is shown “puffing up” after each iteration, eventually appearing as though it has puffed up against an upper limit past which it cannot puff anymore"><img src="../assets/img/2021-03-20/reaction-with-carrying-capacity.png" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">A normal distribution is shown “puffing up” after each iteration, eventually appearing as though it has puffed up against an upper limit past which it cannot puff anymore</figcaption><p></p>
 </figure>
 </div>
@@ -166,7 +166,7 @@ ul.task-list li input[type="checkbox"] {
 <p>For my final project in this course, I worked on a spatial model of infectious disease transmission with stochasticity and reinfection. I think infectious disease modeling is a fascinating subject and I’m suspicious it’s worth thinking through the intricacies of how stochasticity can affect disease dynamics in ways that deterministic equations might not reveal.</p>
 <div class="quarto-figure quarto-figure-center">
 <figure class="figure">
-<p><a href="../assets/img/2021-03-20/2D SIRS with noise.gif" class="lightbox" title="A 2D grid is shown where initially there is only a spike at the center. The areas concentrically around the center begin to spike in a noisy fashion as disease transmission is simulated to reach neighboring patches of the grid. A ring of spikes continue to propagate outwards, while the center equilibriates to a low level of noisy activity." data-gallery="quarto-lightbox-gallery-3"><img src="../assets/img/2021-03-20/2D SIRS with noise.gif" class="img-fluid figure-img"></a></p>
+<p><a href="../assets/img/2021-03-20/2D SIRS with noise.gif" class="lightbox" data-gallery="quarto-lightbox-gallery-3" title="A 2D grid is shown where initially there is only a spike at the center. The areas concentrically around the center begin to spike in a noisy fashion as disease transmission is simulated to reach neighboring patches of the grid. A ring of spikes continue to propagate outwards, while the center equilibriates to a low level of noisy activity."><img src="../assets/img/2021-03-20/2D SIRS with noise.gif" class="img-fluid figure-img"></a></p>
 <p></p><figcaption class="figure-caption">A 2D grid is shown where initially there is only a spike at the center. The areas concentrically around the center begin to spike in a noisy fashion as disease transmission is simulated to reach neighboring patches of the grid. A ring of spikes continue to propagate outwards, while the center equilibriates to a low level of noisy activity.</figcaption><p></p>
 </figure>
 </div>
@@ -329,7 +329,7 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
 });
 </script>
 </div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"openEffect":"zoom","closeEffect":"zoom","selector":".lightbox","descPosition":"bottom","loop":true});</script>
+<script>var lightboxQuarto = GLightbox({"descPosition":"bottom","closeEffect":"zoom","openEffect":"zoom","loop":true,"selector":".lightbox"});</script>
 
 
 
