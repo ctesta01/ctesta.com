@@ -1,0 +1,20 @@
+project:
+  type: website
+  output-dir: docs
+
+website:
+  title: "Christian Testa"
+  navbar:
+    left:
+      - href: index.qmd
+        text: Home
+      - href: blog.qmd
+        text: Blog
+      - href: publications.qmd
+        text: Publications
+
+format:
+  html:
+    theme: flatly
+    css: styles.scss
+    toc: true

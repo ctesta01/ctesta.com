@@ -1,0 +1,64 @@
+---
+title: Christian Testa
+image: assets/img/profile.jpeg
+image-alt: "Pronouns: he/him"
+about: 
+  id: hero-heading
+  template: trestles
+  links: 
+  - icon: github
+    text: GitHub
+    href: https://github.com/ctesta01
+  - icon: mastodon 
+    text: Mastodon
+    href: https://fediscience.org/@ctesta
+  - icon: book
+    text: Google Scholar
+    href: https://scholar.google.com/citations?hl=en&user=_9VD8mkAAAAJ
+format:
+  html: 
+    include-in-header: 
+      - text: | 
+         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+         <script type="text/javascript"> 
+         $(document).ready(function() {
+           $('#title-block-header .quarto-title').after('<p>Pronouns: he/him/his</p>');
+         });
+         </script>
+---
+
+:::{#hero-heading}
+## About Me {style="margin-top: -15px;"}
+
+Hello! I am a first year PhD student in the Department of Biostatistics at the 
+Harvard T.H. Chan School of Public Health. My research interest areas
+include causal inference, infectious diseases, and spatial statistics.
+
+Recently I worked (2020-2023) as a statistical data analyst with Nancy Krieger and
+Jarvis Chen in the Department of Social and Behavioral Sciences at the Harvard
+T.H. Chan School of Public Health on 
+projects including: 
+
+- The Public Health Disparities Geocoding Project 2.0
+- Two NIH R01 grant funded projects: 
+  - DNA methylation & adversity: pathways from exposures to health inequities
+  - Advancing novel methods to measure and analyze multiple types of discrimination for population health research
+- A COVID-19 Paper Series 
+:::
+
+Prior, I worked (2017-2020) in the Department of Global Health and 
+Population at Harvard T.H. Chan School of Public Health with Joshua Soloman (now
+at Stanford) and Nicolas Menzies in the Prevention Policy Modeling Lab as a data
+analyst and programmer on several CDC grant funded projects. 
+
+Those projects included: 
+
+  - A web-app to allow users to interact with a Bayesian simulation model of 
+  tuberculosis in the US 50 states and DC under user-configurable scenarios. 
+  - Papers on gonorrhea, syphilis, and tuberculosis transmission in US contexts
+  and implications for strategies for prevention.
+
+I received my Bachelors of Science in Mathematics from Tufts University in 2017.
+
+Pronouns: he/him/his
+
