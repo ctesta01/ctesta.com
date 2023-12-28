@@ -67,8 +67,6 @@ thought those were great examples to start with, but the code should be
 easily adaptable to any US state or locale that has data collected in
 the American Community Survey.
 
-<iframe src="/assets/2023-06-10-scale-dependent-maps/test.html" width='100%' height = '350px'> </iframe>
-
 ``` r
 # dependencies
 require(leaflet)
