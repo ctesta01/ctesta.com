@@ -178,11 +178,11 @@ longitudinally (over-time) for a cohort of people who are not traditionally well
 
 She said of her engagement with fieldwork based science: "That
 year, if I publish less papers, I don't care, because I 
-am going to go for glorious failure." [read: she would rather
+am going to go for glorious failure." As in, she would rather
 go for glorious failure attempting to do community-engaged
 work than traditional success in biostatistics publishing
 yet another methods paper that only gets cited by 
-subsequent methods papers.]
+subsequent methods papers.
 
 ---
 
