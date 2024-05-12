@@ -175,7 +175,7 @@ and analyzed.
 She also described her involvement in [MI-CARES](https://ceecr.org/cohorts/mi-cares/), a huge grant
 focused on over-sampling racial/ethnic minority populations in 
 Michigan, and to be 'the one study that does it all' in terms of 
-capturing cardio-metabolomics, epigenomics, environmental justice,
+capturing cardio-metabolomics, epigenomics, microbiome profiles, mental health, environmental justice,
 residential measures, discrimination, etc., etc., etc.,
 so that we can truly have
 one dataset where all of the complexities of health are measured
