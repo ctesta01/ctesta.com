@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+
+<meta charset="utf-8">
+<meta name="generator" content="quarto-1.2.269">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+
+<meta name="author" content="Christian Testa">
+<meta name="dcterms.date" content="2021-03-20">
+
+<title>Christian Testa - Simulation, Error, and Modeling the Physical World</title>
+<style>
+code{white-space: pre-wrap;}
+span.smallcaps{font-variant: small-caps;}
+div.columns{display: flex; gap: min(4vw, 1.5em);}
+div.column{flex: auto; overflow-x: auto;}
+div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
+ul.task-list{list-style: none;}
+ul.task-list li input[type="checkbox"] {
+  width: 0.8em;
+  margin: 0 0.8em 0.2em -1.6em;
+  vertical-align: middle;
+}
+</style>
+
+
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
+<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
+<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
+<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
+<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
+<script id="quarto-search-options" type="application/json">{
+  "location": "navbar",
+  "copy-button": false,
+  "collapse-after": 3,
+  "panel-placement": "end",
+  "type": "overlay",
+  "limit": 20,
+  "language": {
+    "search-no-results-text": "No results",
+    "search-matching-documents-text": "matching documents",
+    "search-copy-link-title": "Copy link to search",
+    "search-hide-matches-text": "Hide additional matches",
+    "search-more-match-text": "more match in this document",
+    "search-more-matches-text": "more matches in this document",
+    "search-clear-button-title": "Clear",
+    "search-detached-cancel-button-title": "Cancel",
+    "search-submit-button-title": "Submit"
+  }
+}</script>
+
+
+<link rel="stylesheet" href="../styles.scss">
+</head>
+
+<body class="nav-fixed">
+
+<div id="quarto-search-results"></div>
+  <header id="quarto-header" class="headroom fixed-top">
+    <nav class="navbar navbar-expand-lg navbar-dark ">
+      <div class="navbar-container container-fluid">
+      <div class="navbar-brand-container">
+    <a class="navbar-brand" href="../index.html">
+    <span class="navbar-title">Christian Testa</span>
+    </a>
+  </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
+  <span class="navbar-toggler-icon"></span>
+</button>
+          <div class="collapse navbar-collapse" id="navbarCollapse">
+            <ul class="navbar-nav navbar-nav-scroll me-auto">
+  <li class="nav-item">
+    <a class="nav-link" href="../index.html">
+ <span class="menu-text">Home</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../blog.html">
+ <span class="menu-text">Blog</span></a>
+  </li>  
+  <li class="nav-item">
+    <a class="nav-link" href="../publications.html">
+ <span class="menu-text">Publications</span></a>
+  </li>  
+</ul>
+              <div id="quarto-search" class="" title="Search"></div>
+          </div> <!-- /navcollapse -->
+      </div> <!-- /container-fluid -->
+    </nav>
+</header>
+<!-- content -->
+<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
+<!-- sidebar -->
+<!-- margin-sidebar -->
+    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
+        
+    </div>
+<!-- main -->
+<main class="content" id="quarto-document-content">
+
+<header id="title-block-header" class="quarto-title-block default">
+<div class="quarto-title">
+<h1 class="title">Simulation, Error, and Modeling the Physical World</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">simulation</div>
+    <div class="quarto-category">modeling</div>
+    <div class="quarto-category">physics</div>
+  </div>
+  </div>
+
+
+
+<div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Christian Testa </p>
+          </div>
+  </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">March 20, 2021</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+</header>
+
+<p>A few years ago I took a course from <a href="https://en.wikipedia.org/wiki/Sauro_Succi">Sauro Succi</a> called <em>Computational Methods for the Physical Sciences</em> that surveyed topics such as computational methods for solving partial differential equations<!--more-->, methods for simulating physical systems where processes span different scales of magnitude such as turbulence or fracturing materials, and statistical physics.</p>
+<p>Arguably the most interesting feature of the course was the <a href="https://en.wikipedia.org/wiki/Lattice_Boltzmann_methods">Lattice-Boltzmann method</a> for simulating fluid dynamics that has particular advantages in its efficiency and amenability to parallelization.</p>
+<p>Throughout this course I created a handful of visualizations that, looking back on, seem worth sharing. The first of which, depicted above, shows a normally distributed mass shifting across periodic boundaries on the left and right hand sides as it slowly diffuses and spreads out. There’s nothing deep about this, I just thought the visualization looks nice.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/2021-03-20/gibbs-phenomena.png" class="lightbox" title="A rectangular distribution of mass is shown in multiple iterations where the edges start to rapidly oscillate due to Gibbs phenomenon in a way that doesn’t reflect what would really happen in reality (the rectangle would just move to the side)." data-gallery="quarto-lightbox-gallery-1"><img src="../assets/img/2021-03-20/gibbs-phenomena.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">A rectangular distribution of mass is shown in multiple iterations where the edges start to rapidly oscillate due to Gibbs phenomenon in a way that doesn’t reflect what would really happen in reality (the rectangle would just move to the side).</figcaption><p></p>
+</figure>
+</div>
+<p>One of the concepts introduced in this course was <a href="https://en.wikipedia.org/wiki/Gibbs_phenomenon">Gibbs phenomenon</a> which is what happens in a variety of contexts, the most popular of which being when one either attempts to approximate a square distribution through Fourier decomposition, or when one attempts to propogate a square distribution of mass over a discretized model of space. The result is that when the movement does not exactly line up with the discretization of space, the approximation of how much mass is at each discrete point in space can go quite haywire.</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><a href="../assets/img/2021-03-20/reaction-with-carrying-capacity.png" class="lightbox" title="A normal distribution is shown “puffing up” after each iteration, eventually appearing as though it has puffed up against an upper limit past which it cannot puff anymore" data-gallery="quarto-lightbox-gallery-2"><img src="../assets/img/2021-03-20/reaction-with-carrying-capacity.png" class="img-fluid figure-img"></a></p>
+<p></p><figcaption class="figure-caption">A normal distribution is shown “puffing up” after each iteration, eventually appearing as though it has puffed up against an upper limit past which it cannot puff anymore</figcaption><p></p>
+</figure>
+</div>
+<p>This is a visualization of some material which can be thought of as reacting with itself in a way that produces more of itself (not realistic, I know) up to the observed carrying capacity. Again, nothing profound, just an aesthetically pleasing visualization.</p>
+<p>For my final project in this course, I worked on a spatial model of infectious disease transmission with stochasticity and reinfection. I think infectious disease modeling is a fascinating subject and I’m suspicious it’s worth thinking through the intricacies of how stochasticity can affect disease dynamics in ways that deterministic equations might not reveal.</p>
+<!--![A 2D grid is shown where initially there is only a spike at the center. The areas concentrically 
+around the center begin to spike in a noisy fashion as disease transmission is simulated to reach 
+neighboring patches of the grid. A ring of spikes continue to propagate outwards, while the center 
+equilibriates to a low level of noisy activity.](/assets/img/2021-03-20/2D SIRS with noise.gif)-->
+<div class="quarto-video"><video id="video_shortcode_videojs_video1" class="video-js vjs-default-skin vjs-fluid" controls="" preload="auto" data-setup="{}" title=""><source src="../assets/img/2021-03-20/2D SIRS with noise.mp4"></video></div>
+<!-- ![](../assets/img/2021-03-20/gibbs phenomena with bad cfl.mp4) -->
+<!-- ![](/assets/img/2021-03-20/2D SIRS with noise.mp4) -->
+<!-- articles/websites I think I might be interested in: 
+
+https://www.sciencedirect.com/science/article/pii/S2468042716300495#fig1
+
+https://www.coursera.org/lecture/building-on-the-sir-model/stochastic-and-deterministic-models-7tnNb
+
+https://www4.stat.ncsu.edu/~gross/BIO560%20webpage/slides/Jan102013.pdf
+
+http://www.math.ttu.edu/~lallen/
+
+https://en.wikipedia.org/wiki/Linda_J._S._Allen
+
+https://www.hindawi.com/journals/complexity/2018/3060368/
+
+https://www.sciencedirect.com/science/article/pii/S1755436519300325
+
+https://link.springer.com/chapter/10.1007/978-3-540-78911-6_10
+
+https://royalsocietypublishing.org/doi/pdf/10.1098/rsif.2007.1106
+
+-->
+
+
+
+</main> <!-- /main -->
+<script id="quarto-html-after-body" type="application/javascript">
+window.document.addEventListener("DOMContentLoaded", function (event) {
+  const toggleBodyColorMode = (bsSheetEl) => {
+    const mode = bsSheetEl.getAttribute("data-mode");
+    const bodyEl = window.document.querySelector("body");
+    if (mode === "dark") {
+      bodyEl.classList.add("quarto-dark");
+      bodyEl.classList.remove("quarto-light");
+    } else {
+      bodyEl.classList.add("quarto-light");
+      bodyEl.classList.remove("quarto-dark");
+    }
+  }
+  const toggleBodyColorPrimary = () => {
+    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
+    if (bsSheetEl) {
+      toggleBodyColorMode(bsSheetEl);
+    }
+  }
+  toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
+  const clipboard = new window.ClipboardJS('.code-copy-button', {
+    target: function(trigger) {
+      return trigger.previousElementSibling;
+    }
+  });
+  clipboard.on('success', function(e) {
+    // button target
+    const button = e.trigger;
+    // don't keep focus
+    button.blur();
+    // flash "checked"
+    button.classList.add('code-copy-button-checked');
+    var currentTitle = button.getAttribute("title");
+    button.setAttribute("title", "Copied!");
+    let tooltip;
+    if (window.bootstrap) {
+      button.setAttribute("data-bs-toggle", "tooltip");
+      button.setAttribute("data-bs-placement", "left");
+      button.setAttribute("data-bs-title", "Copied!");
+      tooltip = new bootstrap.Tooltip(button, 
+        { trigger: "manual", 
+          customClass: "code-copy-button-tooltip",
+          offset: [0, -8]});
+      tooltip.show();    
+    }
+    setTimeout(function() {
+      if (tooltip) {
+        tooltip.hide();
+        button.removeAttribute("data-bs-title");
+        button.removeAttribute("data-bs-toggle");
+        button.removeAttribute("data-bs-placement");
+      }
+      button.setAttribute("title", currentTitle);
+      button.classList.remove('code-copy-button-checked');
+    }, 1000);
+    // clear code selection
+    e.clearSelection();
+  });
+  function tippyHover(el, contentFn) {
+    const config = {
+      allowHTML: true,
+      content: contentFn,
+      maxWidth: 500,
+      delay: 100,
+      arrow: false,
+      appendTo: function(el) {
+          return el.parentElement;
+      },
+      interactive: true,
+      interactiveBorder: 10,
+      theme: 'quarto',
+      placement: 'bottom-start'
+    };
+    window.tippy(el, config); 
+  }
+  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
+  for (var i=0; i<noterefs.length; i++) {
+    const ref = noterefs[i];
+    tippyHover(ref, function() {
+      // use id or data attribute instead here
+      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
+      try { href = new URL(href).hash; } catch {}
+      const id = href.replace(/^#\/?/, "");
+      const note = window.document.getElementById(id);
+      return note.innerHTML;
+    });
+  }
+  const findCites = (el) => {
+    const parentEl = el.parentElement;
+    if (parentEl) {
+      const cites = parentEl.dataset.cites;
+      if (cites) {
+        return {
+          el,
+          cites: cites.split(' ')
+        };
+      } else {
+        return findCites(el.parentElement)
+      }
+    } else {
+      return undefined;
+    }
+  };
+  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
+  for (var i=0; i<bibliorefs.length; i++) {
+    const ref = bibliorefs[i];
+    const citeInfo = findCites(ref);
+    if (citeInfo) {
+      tippyHover(citeInfo.el, function() {
+        var popup = window.document.createElement('div');
+        citeInfo.cites.forEach(function(cite) {
+          var citeDiv = window.document.createElement('div');
+          citeDiv.classList.add('hanging-indent');
+          citeDiv.classList.add('csl-entry');
+          var biblioDiv = window.document.getElementById('ref-' + cite);
+          if (biblioDiv) {
+            citeDiv.innerHTML = biblioDiv.innerHTML;
+          }
+          popup.appendChild(citeDiv);
+        });
+        return popup.innerHTML;
+      });
+    }
+  }
+});
+</script>
+</div> <!-- /content -->
+<script>var lightboxQuarto = GLightbox({"closeEffect":"zoom","selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":true});</script>
+<script>videojs(video_shortcode_videojs_video1);</script>
+
+
+
+</body></html>

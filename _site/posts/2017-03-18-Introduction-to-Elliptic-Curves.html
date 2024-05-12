@@ -1,148 +1,3 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
-
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
-
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Christian Testa">
-<meta name="dcterms.date" content="2017-03-18">
-
-<title>Christian Testa - Introduction to the Theory of Elliptic Curves</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
-  }
-}</script>
-<script type="text/javascript" src="http://mbostock.github.com/d3/d3.js?2.6.0"></script>
-<script type="text/javascript" src="../assets/js/2017-03-18-D3js2.js"></script>
-
-  <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-chtml-full.js" type="text/javascript"></script>
-
-<link rel="stylesheet" href="../styles.scss">
-</head>
-
-<body class="nav-fixed">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Christian Testa</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../blog.html">
- <span class="menu-text">Blog</span></a>
-  </li>  
-</ul>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#sources" id="toc-sources" class="nav-link active" data-scroll-target="#sources">Sources</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">Introduction to the Theory of Elliptic Curves</h1>
-</div>
-
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Christian Testa </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">March 18, 2017</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
-
 <!-- I learned how to set up the extra-css and extra-js from
 this stackoverflow post:
 https://stackoverflow.com/questions/14113559/how-to-tune-layout-for-a-particular-page-post-in-jekyll
@@ -157,6 +12,7 @@ https://en.wikipedia.org/wiki/Blackboard_bold
 <div id="container" class="svg-container">
 <!-- <svg id="chart" width="1050px" height="700"></svg> -->
 </div>
+
 <!--  
 Sources:
 - Fluid Flow: https://web.stanford.edu/~cantwell/Difficult_to_find_publications/Elliptic_Curves_and_3D_flow_patterns_Cantwell_2000.pdf
@@ -168,239 +24,253 @@ Sources:
 - https://projecteuclid.org/download/pdf_1/euclid.bams/1183533964
 
 -->
-<p>Elliptic curves are a subject, simple to construct and ubiquitous, that have found themselves at the forefront of Number Theory and Algebraic Geometry research. The subject has roots in some of the oldest Mathematics, and its modern connections tie it to an incredible span of research including fluid flow, sphere packing, modular forms, and string theory. Elliptic curves are the degree three nonsingular algebraic plane curves with at least one rational point.</p>
+
+<p>Elliptic curves are a subject, simple to construct and ubiquitous, that have found
+themselves at the forefront of Number Theory and Algebraic Geometry research.
+The subject has roots in some of the oldest Mathematics, and its modern
+connections tie it to an incredible span of research including
+fluid flow, sphere packing, modular forms, and string theory. Elliptic curves
+are the degree three nonsingular algebraic plane curves with at least one
+rational point.</p>
+
 <center>
-<img src="../assets/img/2017-03-05/three-example-curves.png" class="img-fluid">
+![](/assets/img/2017-03-05/three-example-curves.png)
 </center>
-<p>Their existence was considered by Diophantus in the 2nd century a.d. in his text <em>Arithmetica</em>. The question he originally posed has been rephrased in modern language: “To divide a given number into two numbers such that their product is a cube minus its side.” That is, given <span class="math inline">\(a \in \mathbb N\)</span> find <span class="math inline">\(x,y \in \mathbb Z\)</span> such that <span class="math display">\[y(a-y) = x^3 - x.\]</span></p>
+
+<p>Their existence was considered by Diophantus in the 2nd century a.d. in
+his text <em>Arithmetica</em>. The question he originally posed has been rephrased
+in modern language: “To divide a given number into two numbers such that their
+product is a cube minus its side.” That is, given $a \in \mathbb N$ find
+$x,y \in \mathbb Z$ such that
+\(y(a-y) = x^3 - x.\)</p>
+
 <!--more-->
-<p>Elliptic curves were the topic of my undergraduate thesis, which you can download <a href="../assets/Undergraduate Thesis - Christian Testa.pdf"> here.</a></p>
-<p>Most individuals are familiar with the plane conics, the degree two nonsingular algebraic curves. Elliptic curves, in some sense, are their slightly more complicated, yet seemingly infinitely more subtle, older sibling. This will be realized later through the concept of genus.</p>
-<p>Elliptic curves are contemporarily thought of as plane curves, however they originally arose in the context of calculating arc-lengths of ellipses. It is these arc-lengths of ellipses which in part created elliptic curve’s early ubiquity. These are the elliptic integrals</p>
-<p><span class="math display">\[ \int R(t,\sqrt{P(t)}) dt, \]</span></p>
-<p>where <span class="math inline">\(P(t)\)</span> is a degree three or four nonsingular polynomial and <span class="math inline">\(R\)</span> is a rational function of <span class="math inline">\(\sqrt{P(t)}\)</span> and <span class="math inline">\(t\)</span>. An example might be derived from the pendulum, such as:</p>
-<p><span class="math display">\[ \int \frac{d\theta}{\sqrt{C + \cos \theta}} =
+
+<p>Elliptic curves were the topic of my undergraduate thesis, which you can download
+<a href="/assets/Undergraduate Thesis - Christian Testa.pdf">
+here.</a></p>
+
+<p>Most individuals are familiar with the plane conics, the degree
+two nonsingular algebraic curves. Elliptic curves, in some sense,
+are their slightly more complicated, yet seemingly infinitely more subtle,
+older sibling. This will be realized later through the concept of genus.</p>
+
+<p>Elliptic curves are contemporarily thought of as plane curves,
+however they originally arose in the context of calculating arc-lengths
+of ellipses. It is these arc-lengths
+of ellipses which in part created elliptic curve’s early ubiquity.
+These are the elliptic integrals</p>
+
+\[\int R(t,\sqrt{P(t)}) dt,\]
+
+<p>where $P(t)$ is a degree three or four nonsingular polynomial and $R$ is a 
+rational function of $\sqrt{P(t)}$ and $t$. An example
+might be derived from the pendulum, such as:</p>
+
+\[\int \frac{d\theta}{\sqrt{C + \cos \theta}} =
 - \int \frac{dx}{\sqrt{(1-x^2)(C+x)}} =
-\int \frac{dx}{y}, \text{ where } y^2 = (1-x^2)(C+x).\]</span></p>
-<p>Apollonius first considered calculating the arc-length of an ellipse around 200 b.c. and found that he was unable to do it. This problem defied progress until the 17th century when Euler and others found infinite series expressions for arc-lengths. Further, Euler discovered as surprising group law for these infinite series.</p>
-<p><span class="math display">\[ \int_{\infty}^{x_1} \frac{dx}{y} + \int_{\infty}^{x_2} \frac{dx}{y} =
-\int_{\infty}^{x_3} \frac{dx}{y}.\]</span></p>
-<p>In 1687 Newton wrote down the majority of Bezout’s Theorem, which states that given two irreducible degree curves their intersection counting multiplicity has the product of the degrees of the curves. This gave algebraic motivation for what had already been observed: there is group structure to the rational points of an elliptic curve.</p>
+\int \frac{dx}{y}, \text{ where } y^2 = (1-x^2)(C+x).\]
+
+<p>Apollonius first considered calculating the arc-length of an ellipse
+around 200 b.c. and found that he was unable to do it. This problem
+defied progress until the 17th century when Euler and others found
+infinite series expressions for arc-lengths. Further, Euler discovered
+as surprising group law for these infinite series.</p>
+
+\[\int_{\infty}^{x_1} \frac{dx}{y} + \int_{\infty}^{x_2} \frac{dx}{y} =
+\int_{\infty}^{x_3} \frac{dx}{y}.\]
+
+<p>In 1687 Newton wrote down the majority of Bezout’s Theorem, which
+states that given two irreducible degree curves their intersection
+counting multiplicity has the product of the degrees of the curves. This gave
+algebraic motivation for what had already been observed: there is group structure
+to the rational points of an elliptic curve.</p>
+
 <center>
 <div style="display: block; margin: auto">
-<p><img height="35%" width="35%" alt="Point Addition" src="../assets/img/2017-03-17/ch2-point-addition.png"> <img height="35%" width="35%" alt="Point Multiplication" src="../assets/img/2017-03-17/ch2-point-multiplication.png"> <br> Point Addition and Multiplication</p>
+<img height="35%" width="35%" alt="Point Addition" src="/assets/img/2017-03-17/ch2-point-addition.png" />
+<img height="35%" width="35%" alt="Point Multiplication" src="/assets/img/2017-03-17/ch2-point-multiplication.png" />
+<br />
+Point Addition and Multiplication
 </div>
 </center>
-<p>Elliptic integrals, before connecting to elliptic curves, were inverted and considered as elliptic functions by mathematicians such as Abel, Gauss, Jacobi, and notably Weierstraß. The motivation for doing so is that the inverse of <span class="math inline">\(\int \frac{dx}{\sqrt{1-x^2}} = \arcsin(x)\)</span> is significantly more friendly a function.</p>
-<p>While it may be that Diophantus considered solutions to the equation describing an elliptic curve, their modern formulation rests on their analytic construction as the doubly periodic functions over <span class="math inline">\(\mathbb C\)</span>. These are Weierstraß’ elliptic functions</p>
-<p><span class="math display">\[\wp:\mathbb C \to \mathbb C / \Lambda \text{ for some } \Lambda \cong
-\mathbb Z\omega_1 +\mathbb Z\omega_2,\]</span></p>
-<p><span class="math display">\[ \wp(z \; \omega_1,\omega_2) = \frac{1}{z^2} + \sum_{n^2+m^2 \ne 0} \left( \frac{1}{(z+m\omega_1+n\omega_2)^2} -\frac{1}{\left(m\omega_1+n\omega_2\right)^2} \right)
-,\]</span></p>
-<p><span class="math display">\[\wp(z) = \frac{1}{z^2} + \sum_{\omega \in \Lambda - \{ 0\} } \left( \frac{1}{(z-\omega)^2} -\frac{1}{\omega}^2 \right),\]</span></p>
-<p>where <span class="math inline">\(\omega_1\)</span> and <span class="math inline">\(\omega_2\)</span> generate the complex lattice <span class="math inline">\(\Lambda = \{ \mathbb Z \omega_1 + \mathbb Z \omega_2 \}\)</span>, or if <span class="math inline">\(\omega_2\)</span> is normalized to 1, simply <span class="math inline">\(\Lambda = \mathbb Z \omega + \mathbb Z\)</span>.</p>
+
+<p>Elliptic integrals, before connecting to elliptic curves,
+were inverted and considered as elliptic functions by mathematicians such
+as Abel, Gauss, Jacobi, and notably Weierstraß. The motivation for doing
+so is that the inverse of $\int \frac{dx}{\sqrt{1-x^2}} = \arcsin(x)$
+is significantly more friendly a function.</p>
+
+<p>While it may be that Diophantus considered solutions to the equation
+describing an elliptic curve, their modern formulation rests on their
+analytic construction as the doubly periodic functions over $\mathbb C$.
+These are Weierstraß’ elliptic functions</p>
+
+\[\wp:\mathbb C \to \mathbb C / \Lambda \text{ for some } \Lambda \cong
+\mathbb Z\omega_1 +\mathbb Z\omega_2,\]
+
+\[\wp(z \; \omega_1,\omega_2) = \frac{1}{z^2} + \sum_{n^2+m^2 \ne 0} \left( \frac{1}{(z+m\omega_1+n\omega_2)^2} -\frac{1}{\left(m\omega_1+n\omega_2\right)^2} \right)
+,\]
+
+\[\wp(z) = \frac{1}{z^2} + \sum_{\omega \in \Lambda - \{ 0\} } \left( \frac{1}{(z-\omega)^2} -\frac{1}{\omega}^2 \right),\]
+
+<p>where $\omega_1$ and $\omega_2$ generate the complex lattice
+$\Lambda = { \mathbb Z \omega_1 + \mathbb Z \omega_2 }$, or if
+$\omega_2$ is normalized to 1, simply $\Lambda = \mathbb Z \omega + \mathbb Z$.</p>
+
 <center>
 <div style="display: block; margin: auto">
-<p><img height="15%" width="15%" alt="Wikipedia Lattice Construction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lattice_torsion_points.svg/450px-Lattice_torsion_points.svg.png"> <img height="15%" width="15%" alt="Wikipedia Lattice Construction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Weierstrass_p.svg/150px-Weierstrass_p.svg.png"> <img height="15%" width="15%" alt="Wikipedia Lattice Construction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Weierstrass_elliptic_function_P.png/1280px-Weierstrass_elliptic_function_P.png"> <br> <a href="https://en.wikipedia.org/wiki/Weierstrass%27s_elliptic_functions">Weierstraß’ <span class="math inline">\(\wp\)</span> function.</a></p>
+<img height="15%" width="15%" alt="Wikipedia Lattice Construction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d5/Lattice_torsion_points.svg/450px-Lattice_torsion_points.svg.png" />
+<img height="15%" width="15%" alt="Wikipedia Lattice Construction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/5/5a/Weierstrass_p.svg/150px-Weierstrass_p.svg.png" />
+<img height="15%" width="15%" alt="Wikipedia Lattice Construction" src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/07/Weierstrass_elliptic_function_P.png/1280px-Weierstrass_elliptic_function_P.png" />
+<br />
+<a href="https://en.wikipedia.org/wiki/Weierstrass%27s_elliptic_functions">Weierstraß' $\wp$ function.</a>
 </div>
 </center>
-<p>Indeed, what these mathematicians surrounding the 18th Century had discovered is that calculating arc-lengths of ellipses naturally involved thinking about the problem in an algebraically closed field such as the complex numbers <span class="math inline">\(\mathbb C\)</span>, where the problem is translated to one with doubly periodic structure. This structure is isomorphic to that of a torus. One way to think of this is by “identifying edges.” If <span class="math inline">\(z\)</span> drifts of the top of the fundamental parallelogram, its image re-appears on the bottom of the parallelogram under a doubly periodic function, and similarly for drifting over the side. This is stating that as a Riemann surface an elliptic function have a topology with a single hole, like a torus, and that it has genus <span class="math inline">\(g = 1\)</span>. This suggests a major separation in the theory of elliptic curves from those of conics, since the conics are genus zero curves.</p>
-<p>Weierstraß discovered that all doubly periodic functions could be expressed through his <span class="math inline">\(\wp\)</span> function, and that it followed the differential equation:</p>
-<p><span class="math display">\[ \wp' (z)^2 = 4 \wp^3 (z) -g_4 \wp (z) - g_6,\]</span></p>
-<p>where <span class="math inline">\(g_4 = 60G_4\)</span> and <span class="math inline">\(g_6 = 140G_6\)</span> and <span class="math inline">\(G_n\)</span> is Eisenstein’s series given by <span class="math display">\[ G_n = \sum_{\omega \neq 0} \frac{1}{\omega^n}.\]</span></p>
-<p>Corresponding to this complex doubly periodic structure, Weierstraß had found a way to classify the equations of elliptic curves. Any degree three nonsingular algebraic plane curve over a field <span class="math inline">\(k\)</span> can be transformed to Weierstraß form:</p>
-<p><span class="math display">\[y^2 = x^3 + ax + b, \text{ provided } \text{characteristic}(k) \neq 2,3,\]</span></p>
-<p><span class="math display">\[\text{ and always at least } y^2 + a_1 xy + a_3y = x^3 + a_2x^2 + a_4 x + a_6 \text{ even if } \text{characteristic}(k) = 2,3. \]</span></p>
-<p>Indeed, Elliptic Curves defined over the complex numbers <span class="math inline">\(\mathbb C\)</span> are isomorphic to complex lattices given by <span class="math inline">\(\mathbb C / \Lambda\)</span> for a lattice <span class="math inline">\(\Lambda\)</span>. Startling connections were born of this fact.</p>
-<p>The Eisenstein series are examples of modular forms, which are incredibly deep number theoretical objects, described by complex functions which satisfy certain invariance properties under their arguments translation by particular matrix groups. Elliptic Curves are a seemingly simple class of curves, with a natural group law arising from Bezout’s theorem and Algebra-Geometric arguments, and yet we have found that they are tied into Number Theory in profound and unanticipated ways.</p>
-<p>To a Weierstraß equation is associated two useful invariants: the <span class="math inline">\(j\)</span>-invariant and the <span class="math inline">\(\Delta\)</span> discriminant. Klein’s <span class="math inline">\(j\)</span>-Invariant is among other things, a representative of the elliptic curve’s isomorphism class over the algebraically closure, and the discriminant is a polynomial defined as a product such that when a polynomial has factors with multiplicity it vanishes, that is to say <span class="math inline">\(\Delta = 0\)</span> when the curve is singular.</p>
+
+<p>Indeed, what these mathematicians surrounding the 18th Century had discovered
+is that calculating arc-lengths of ellipses naturally involved thinking
+about the problem in an algebraically closed field such as the
+complex numbers $\mathbb C$, where the problem is translated to one with
+doubly periodic structure. This structure is isomorphic to that of a torus.
+One way to think of this is by “identifying edges.” If $z$ drifts of the top
+of the fundamental parallelogram, its image re-appears on the bottom
+of the parallelogram under a doubly periodic function, and similarly for drifting over the side.
+This is stating that as a Riemann surface an elliptic function have a topology with a single hole,
+like a torus, and that it has genus $g = 1$. This suggests a major separation
+in the theory of elliptic curves from those of conics, since the
+conics are genus zero curves.</p>
+
+<p>Weierstraß discovered that all doubly periodic functions could be expressed
+through his $\wp$ function, and that it followed the differential
+equation:</p>
+
+\[\wp' (z)^2 = 4 \wp^3 (z) -g_4 \wp (z) - g_6,\]
+
+<p>where $g_4 = 60G_4$ and $g_6 = 140G_6$ and $G_n$ is Eisenstein’s series given by
+\(G_n = \sum_{\omega \neq 0} \frac{1}{\omega^n}.\)</p>
+
+<p>Corresponding to this complex doubly periodic structure,
+Weierstraß had found a way to classify the equations of elliptic curves.
+Any degree three nonsingular algebraic plane curve over a field $k$
+can be transformed to Weierstraß form:</p>
+
+\[y^2 = x^3 + ax + b, \text{ provided } \text{characteristic}(k) \neq 2,3,\]
+
+\[\text{ and always at least } y^2 + a_1 xy + a_3y = x^3 + a_2x^2 + a_4 x + a_6 \text{ even if } \text{characteristic}(k) = 2,3.\]
+
+<p>Indeed, Elliptic Curves defined over the complex numbers $\mathbb C$
+are isomorphic to complex lattices given by $\mathbb C / \Lambda$ for a lattice
+$\Lambda$. Startling connections were born of this fact.</p>
+
+<p>The Eisenstein series are examples of modular forms, which are
+incredibly deep number theoretical objects, described by complex functions which
+satisfy certain invariance properties under their arguments translation
+by particular matrix groups. Elliptic Curves are a seemingly simple class
+of curves, with a natural group law
+arising from Bezout’s theorem
+and Algebra-Geometric arguments, and yet we have found that they are
+tied into Number Theory in profound and unanticipated ways.</p>
+
+<p>To a Weierstraß equation is associated two useful invariants:
+the $j$-invariant and the $\Delta$ discriminant. Klein’s $j$-Invariant is
+among other things, a representative of the elliptic curve’s isomorphism
+class over the algebraically closure, and the discriminant is a polynomial
+defined as a product such that when a polynomial has factors with
+multiplicity it vanishes, that is to say $\Delta = 0$ when the
+curve is singular.</p>
+
 <p>These are found to have the following equations</p>
-<p><span class="math display">\[ \Delta=g_2^3-27g_3^2, \]</span></p>
-<p><span class="math display">\[ j(\tau) = 1728 \frac{g_2^3}{\Delta}. \]</span></p>
+
+\[\Delta=g_2^3-27g_3^2,\]
+
+\[j(\tau) = 1728 \frac{g_2^3}{\Delta}.\]
+
 <center>
 <div style="display: block; margin: auto">
-<p><img width="50%" height="30%" src="https://upload.wikimedia.org/wikipedia/commons/3/37/KleinInvariantJ.jpg"> <br> <span class="image-credit"> <a href="https://en.wikipedia.org/wiki/J-invariant">The <span class="math inline">\(j\)</span>-Invariant as a modular form</a> </span></p>
+<img width="50%" height="30%" src="https://upload.wikimedia.org/wikipedia/commons/3/37/KleinInvariantJ.jpg" />
+<br />
+<span class="image-credit"> <a href="https://en.wikipedia.org/wiki/J-invariant">The $j$-Invariant as a modular form</a> </span>
 </div>
 </center>
-<p><br></p>
-<p>The 20th Century saw great progress in Algebraic-Geometry and as a result an elliptic curve’s rational points, denoted <span class="math inline">\(E(\mathbb Q)\)</span>, are somewhat better understood. In 1922 the Mordell-Weil Theorem was proven, which states that all abelian varieties over number fields are finitely generated abelian groups. Later in 1984 a conjecture by Mordell was proven by Faltings stating that the genus 0 curves over <span class="math inline">\(\mathbb Q\)</span> have either <span class="math inline">\(\emptyset\)</span> or infinitely many points, genus 1 curves have <span class="math inline">\(\emptyset\)</span>, finitely many, or infinitely many <span class="math inline">\(\mathbb Q\)</span>-points.</p>
-<p>However, simultaneous progress was being made in the theory of Modular Forms. Ramanujan defined his <span class="math inline">\(\tau\)</span> function by the power series expansion of the discriminant <span class="math inline">\(\Delta\)</span>.</p>
-<p><span class="math display">\[\sum_{n\geq 1}\tau(n)q^n=q\prod_{n\geq 1}(1-q^n)^{24} =\Delta(z),\]</span></p>
-<p><span class="math display">\[\text{ where } q=\exp(2\pi iz).\]</span></p>
-<p>Ramanujan was able to conjecture powerful number theoretic congruences describing this <span class="math inline">\(\tau\)</span> function through modular forms. Separately Ramanujan used Eisenstein series and other modular forms to produce astounding congruences describing the partition function <span class="math inline">\(p(n)\)</span>, the function which counts the ways a whole number can be partitioned not counting ordering. The following have been established as theory.</p>
-<p><span class="math display">\[ \begin{align}
+<p><br /></p>
+
+<p>The 20th Century saw great progress in Algebraic-Geometry and as a
+result an elliptic curve’s rational points, denoted $E(\mathbb Q)$, are
+somewhat better understood.
+In 1922 the Mordell-Weil Theorem was proven, which states that
+all abelian varieties over number fields are finitely generated abelian groups.
+Later in 1984 a conjecture by Mordell was proven by Faltings stating
+that the genus 0 curves over $\mathbb Q$ have either $\emptyset$ or
+infinitely many points, genus 1 curves have $\emptyset$,
+finitely many, or infinitely many $\mathbb Q$-points.</p>
+
+<p>However, simultaneous progress was being made in the theory of
+Modular Forms. Ramanujan defined his $\tau$ function by the power series
+expansion of the discriminant $\Delta$.</p>
+
+\[\sum_{n\geq 1}\tau(n)q^n=q\prod_{n\geq 1}(1-q^n)^{24} =\Delta(z),\]
+
+\[\text{ where } q=\exp(2\pi iz).\]
+
+<p>Ramanujan was able to conjecture powerful number theoretic congruences describing this
+$\tau$ function through modular forms. Separately Ramanujan used
+Eisenstein series and other modular forms to produce astounding congruences
+describing the partition function $p(n)$, the function which counts the
+ways a whole number can be partitioned not counting ordering. The following
+have been established as theory.</p>
+
+\[\begin{align}
 \tau(mn) = \tau(m) \tau(n) \text{ if } m \text{ and } n \text{ are relatively prime,} \\
 \tau(p^{r + 1}) = \tau(p)\tau(p^r) - p^{11}\tau(p^{r - 1}), \\
 |\tau(p)| \leq 2p^{11/2} \text{ for primes } p. \\
-\end{align} \]</span></p>
-<p><span class="math display">\[ \begin{align}
+\end{align}\]
+
+\[\begin{align}
 p(5k+4) &amp; \equiv 0 \pmod 5 \\
 p(7k+5) &amp; \equiv 0 \pmod 7 \\
 p(11k+6) &amp; \equiv 0 \pmod {11}.
-\end{align} \]</span></p>
-<center>
-<a class="info" href="http://www.concinnitasproject.org/portfolio/gallery.php?id=Dyson_Freeman">
+\end{align}\]
+
+<center><a class="info" href="http://www.concinnitasproject.org/portfolio/gallery.php?id=Dyson_Freeman">
 <div style="display: block; margin: auto">
-<p><img width="75%" height="30%" src="../assets/img/2017-03-05/Dyson Freeman MacDonald Tau Equation.png"> <br> <span class="image-credit"> Image Credit: The Concinnitas Project </span></p>
-</div>
-</a>
+<img width="75%" height="30%" src="/assets/img/2017-03-05/Dyson Freeman MacDonald Tau Equation.png" />
+<br />
+<span class="image-credit">
+Image Credit: The Concinnitas Project
+</span>
+</div></a>
 </center>
-<p><br> These are some of the most beautiful congruences in Number Theory and Mathematics. In a 1972 lecture by Freeman Dyson on the <em>Missed Opportunities</em> between Mathematics and Physics, he begins with the story of the following MacDonald equation for Ramanujan’s Tau Function. The MacDonald Equation is an astonishing formula, but to have also found connections to physics highlights the depth to which Ramanujan’s <span class="math inline">\(\tau\)</span>-function, born out of the discriminant <span class="math inline">\(\Delta\)</span>, reaches into the abstract world.</p>
-<p>In the early 1990s Andrew Wiles established the Modularity Theorem, an equivalence between modular forms and the rational structure of an elliptic curve <span class="math inline">\(E(\mathbb Q)\)</span>, and consequently proved Fermat’s Last Theorem. After the 20th Century, Elliptic Curves have found themselves amidst deep Number Theory whilst being employed in applications from cryptography to engineering. The Birch and Swinnerton-Dyer conjecture remains open, and we have yet to fully understand the rank of the group <span class="math inline">\(E(\mathbb Q)\)</span>. Elliptic Curves may have been with us from the very origins of algebra, but we are still just beginning to understand their tremendous structure.</p>
-<section id="sources" class="level3">
-<h3 class="anchored" data-anchor-id="sources">Sources</h3>
+<p><br />
+These are some of the most beautiful congruences in Number Theory and Mathematics.
+In a 1972 lecture by Freeman Dyson on the <em>Missed Opportunities</em> between Mathematics
+and Physics, he begins with the story of the following MacDonald equation for
+Ramanujan’s Tau Function. The MacDonald Equation is an astonishing formula, but to have also found
+connections to physics highlights the depth to which Ramanujan’s $\tau$-function,
+born out of the discriminant $\Delta$, reaches into the abstract world.</p>
+
+<p>In the early 1990s Andrew Wiles established the Modularity Theorem,
+an equivalence between modular forms and the rational structure of
+an elliptic curve $E(\mathbb Q)$, and consequently proved Fermat’s Last Theorem.
+After the 20th Century, Elliptic Curves have found themselves amidst deep
+Number Theory whilst being employed in applications from cryptography to
+engineering. The Birch and Swinnerton-Dyer conjecture remains open,
+and we have yet
+to fully understand the rank of the group $E(\mathbb Q)$. Elliptic Curves
+may have been with us from the very origins of algebra, but we are
+still just beginning to understand their tremendous structure.</p>
+
+<h3 id="sources">Sources</h3>
+
 <ul>
-<li><a href="https://www.math.uci.edu/~asilverb/bibliography/RanksCheatSheet.pdf">Alice Silverberg : Ranks Cheat Sheet</a></li>
-<li><a href="https://books.google.com/books?isbn=0387215778">Dale Husemöller : Elliptic Curves</a></li>
-<li><a href="http://www.math.vt.edu/people/brown/doc/dioellip.pdf">Ezra Brown and Bruce T. Myers : Elliptic Curves from Mordell to Diophantus and Back</a></li>
-<li><a href="https://projecteuclid.org/download/pdf_1/euclid.bams/1183533964">Freeman Dyson : Missed Opportunities</a></li>
-<li><a href="http://www.jmilne.org/math/Books/ectext5.pdf">J.S. Milne : Elliptic Curves</a></li>
-<li><a href="https://books.google.com/books?isbn=0387943250">Joseph H. Silverman : Advanced Topics in the Arithmetic of Elliptic Curves</a></li>
-<li><a href="https://books.google.com/books?isbn=1475719205">Joseph H. Silverman : Elliptic Curves</a></li>
-<li><a href="https://books.google.com/books?isbn=1461209099">Neal I. Koblitz : Elliptic Curves and Modular Forms</a></li>
-<li><a href="https://books.google.com/books?isbn=3319185888">Silverman and Tate : Rational Points on Elliptic Curves</a></li>
-<li><a href="https://books.google.com/books?id=zkrUBwAAQBAJ">Tom M. Apostol : Modular Functions and Dirichlet Series in Number Theory</a></li>
+  <li><a href="https://www.math.uci.edu/~asilverb/bibliography/RanksCheatSheet.pdf">Alice Silverberg : Ranks Cheat Sheet</a></li>
+  <li><a href="https://books.google.com/books?isbn=0387215778">Dale Husemöller : Elliptic Curves</a></li>
+  <li><a href="http://www.math.vt.edu/people/brown/doc/dioellip.pdf">Ezra Brown and Bruce T. Myers : Elliptic Curves from Mordell to Diophantus and Back</a></li>
+  <li><a href="https://projecteuclid.org/download/pdf_1/euclid.bams/1183533964">Freeman Dyson : Missed Opportunities</a></li>
+  <li><a href="http://www.jmilne.org/math/Books/ectext5.pdf">J.S. Milne : Elliptic Curves</a></li>
+  <li><a href="https://books.google.com/books?isbn=0387943250">Joseph H. Silverman : Advanced Topics in the Arithmetic of Elliptic Curves</a></li>
+  <li><a href="https://books.google.com/books?isbn=1475719205">Joseph H. Silverman : Elliptic Curves</a></li>
+  <li><a href="https://books.google.com/books?isbn=1461209099">Neal I. Koblitz : Elliptic Curves and Modular Forms</a></li>
+  <li><a href="https://books.google.com/books?isbn=3319185888">Silverman and Tate : Rational Points on Elliptic Curves</a></li>
+  <li><a href="https://books.google.com/books?id=zkrUBwAAQBAJ">Tom M. Apostol : Modular Functions and Dirichlet Series in Number Theory</a></li>
 </ul>
-
-
-</section>
-
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-  function tippyHover(el, contentFn) {
-    const config = {
-      allowHTML: true,
-      content: contentFn,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start'
-    };
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      return note.innerHTML;
-    });
-  }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
-});
-</script>
-</div> <!-- /content -->
-
-
-
-</body></html>

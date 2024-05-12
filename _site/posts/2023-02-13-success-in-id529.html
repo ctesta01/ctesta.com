@@ -1,442 +1,221 @@
-<!DOCTYPE html>
-<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head>
+<p><img src="/assets/img/2023-02-13-id529/intro_screenshot.png" alt="" /></p>
 
-<meta charset="utf-8">
-<meta name="generator" content="quarto-1.2.269">
+<p>Teaching ID529 was such a blast, and I’m so happy with how the course turned
+out.  The students have repeatedly communicated that they learned an extraordinary
+amount, that the skills they learned will be tools and frameworks of thinking
+they take forward with them as they continue their research and scholarship,
+and that they appreciated the down-to-earth, fun, affirmative atmosphere we
+fostered in our classroom.</p>
 
-<meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
-
-<meta name="author" content="Christian Testa">
-<meta name="dcterms.date" content="2023-02-13">
-
-<title>Christian Testa - The first offering of ID529 Data Management and Analytic Workflows in R at Harvard</title>
-<style>
-code{white-space: pre-wrap;}
-span.smallcaps{font-variant: small-caps;}
-div.columns{display: flex; gap: min(4vw, 1.5em);}
-div.column{flex: auto; overflow-x: auto;}
-div.hanging-indent{margin-left: 1.5em; text-indent: -1.5em;}
-ul.task-list{list-style: none;}
-ul.task-list li input[type="checkbox"] {
-  width: 0.8em;
-  margin: 0 0.8em 0.2em -1.6em;
-  vertical-align: middle;
-}
-</style>
-
-
-<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="../site_libs/quarto-nav/headroom.min.js"></script>
-<script src="../site_libs/clipboard/clipboard.min.js"></script>
-<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="../site_libs/quarto-search/fuse.min.js"></script>
-<script src="../site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="../">
-<script src="../site_libs/quarto-html/quarto.js"></script>
-<script src="../site_libs/quarto-html/popper.min.js"></script>
-<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
-<script src="../site_libs/quarto-html/anchor.min.js"></script>
-<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/glightbox/glightbox.min.js"></script>
-<link href="../site_libs/quarto-contrib/glightbox/glightbox.min.css" rel="stylesheet">
-<link href="../site_libs/quarto-contrib/glightbox/lightbox.css" rel="stylesheet">
-<script id="quarto-search-options" type="application/json">{
-  "location": "navbar",
-  "copy-button": false,
-  "collapse-after": 3,
-  "panel-placement": "end",
-  "type": "overlay",
-  "limit": 20,
-  "language": {
-    "search-no-results-text": "No results",
-    "search-matching-documents-text": "matching documents",
-    "search-copy-link-title": "Copy link to search",
-    "search-hide-matches-text": "Hide additional matches",
-    "search-more-match-text": "more match in this document",
-    "search-more-matches-text": "more matches in this document",
-    "search-clear-button-title": "Clear",
-    "search-detached-cancel-button-title": "Cancel",
-    "search-submit-button-title": "Submit"
-  }
-}</script>
-
-
-<link rel="stylesheet" href="../styles.scss">
-</head>
-
-<body class="nav-fixed">
-
-<div id="quarto-search-results"></div>
-  <header id="quarto-header" class="headroom fixed-top">
-    <nav class="navbar navbar-expand-lg navbar-dark ">
-      <div class="navbar-container container-fluid">
-      <div class="navbar-brand-container">
-    <a class="navbar-brand" href="../index.html">
-    <span class="navbar-title">Christian Testa</span>
-    </a>
-  </div>
-          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarCollapse" aria-controls="navbarCollapse" aria-expanded="false" aria-label="Toggle navigation" onclick="if (window.quartoToggleHeadroom) { window.quartoToggleHeadroom(); }">
-  <span class="navbar-toggler-icon"></span>
-</button>
-          <div class="collapse navbar-collapse" id="navbarCollapse">
-            <ul class="navbar-nav navbar-nav-scroll me-auto">
-  <li class="nav-item">
-    <a class="nav-link" href="../index.html">
- <span class="menu-text">Home</span></a>
-  </li>  
-  <li class="nav-item">
-    <a class="nav-link" href="../blog.html">
- <span class="menu-text">Blog</span></a>
-  </li>  
-</ul>
-              <div id="quarto-search" class="" title="Search"></div>
-          </div> <!-- /navcollapse -->
-      </div> <!-- /container-fluid -->
-    </nav>
-</header>
-<!-- content -->
-<div id="quarto-content" class="quarto-container page-columns page-rows-contents page-layout-article page-navbar">
-<!-- sidebar -->
-<!-- margin-sidebar -->
-    <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#course-tracks" id="toc-course-tracks" class="nav-link active" data-scroll-target="#course-tracks">Course Tracks</a></li>
-  <li><a href="#affirmations" id="toc-affirmations" class="nav-link" data-scroll-target="#affirmations">Affirmations</a></li>
-  <li><a href="#memes" id="toc-memes" class="nav-link" data-scroll-target="#memes">Memes</a></li>
-  <li><a href="#real-time-feedback-surveys" id="toc-real-time-feedback-surveys" class="nav-link" data-scroll-target="#real-time-feedback-surveys">Real-Time Feedback Surveys</a></li>
-  <li><a href="#github-classroom" id="toc-github-classroom" class="nav-link" data-scroll-target="#github-classroom">GitHub Classroom</a></li>
-  <li><a href="#google-docs" id="toc-google-docs" class="nav-link" data-scroll-target="#google-docs">Google Docs</a></li>
-  <li><a href="#hodu" id="toc-hodu" class="nav-link" data-scroll-target="#hodu">Hodu</a></li>
-  <li><a href="#fun-activities" id="toc-fun-activities" class="nav-link" data-scroll-target="#fun-activities">Fun Activities</a></li>
-  <li><a href="#course-outcomes" id="toc-course-outcomes" class="nav-link" data-scroll-target="#course-outcomes">Course Outcomes</a></li>
-  </ul>
-</nav>
-    </div>
-<!-- main -->
-<main class="content" id="quarto-document-content">
-
-<header id="title-block-header" class="quarto-title-block default">
-<div class="quarto-title">
-<h1 class="title">The first offering of ID529 Data Management and Analytic Workflows in R at Harvard</h1>
-  <div class="quarto-categories">
-    <div class="quarto-category">teaching</div>
-  </div>
-  </div>
-
-
-
-<div class="quarto-title-meta">
-
-    <div>
-    <div class="quarto-title-meta-heading">Author</div>
-    <div class="quarto-title-meta-contents">
-             <p>Christian Testa </p>
-          </div>
-  </div>
-    
-    <div>
-    <div class="quarto-title-meta-heading">Published</div>
-    <div class="quarto-title-meta-contents">
-      <p class="date">February 13, 2023</p>
-    </div>
-  </div>
-  
-    
-  </div>
-  
-
-</header>
-
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/intro_screenshot.png" class="lightbox" data-gallery="quarto-lightbox-gallery-1"><img src="../assets/img/2023-02-13-id529/intro_screenshot.png" class="img-fluid figure-img"></a></p>
-</figure>
-</div>
-<p>Teaching ID529 was such a blast, and I’m so happy with how the course turned out. The students have repeatedly communicated that they learned an extraordinary amount, that the skills they learned will be tools and frameworks of thinking they take forward with them as they continue their research and scholarship, and that they appreciated the down-to-earth, fun, affirmative atmosphere we fostered in our classroom.</p>
 <!--more-->
-<p>In Fall 2022, my colleague, mentor, and supervisor Jarvis Chen asked me if I wanted to teach a course about R for the Population Health Science (PHS) PhD program at Harvard. This request came about because the PHS students had expressed in prior years’ surveys an uncomfortability with programming and that their coursework gradually transitioned from not expecting them to be able to program to suddenly expecting them to be able to program with no instruction on the topic. Based on the lectures on <a href="https://github.com/ctesta01/longitudinal_eda_talk/"><em>Exploratory Data Visualization for Longitudinal Data Analysis</em></a>, my work founding, lecturing for and coordinating <a href="https://rug-at-hdsi.org/">the R User Group at the Harvard Data Science Initiative</a>, and lecturing at the <a href="https://ctesta.com/articles/2022-10/phdgp2">Public Health Disparities Geocoding Project 2.0</a> Jarvis thought I was a good choice for an instructor and the right person to design the course curriculum.</p>
-<p>We formed an absolutely fantastic teaching team between Jarvis, myself, Dean Marengi, and Amanda Hernandez with everyone contributing to create what I think became a fantastic course. Our course website is online here <a href="https://id529.github.io/" class="uri">https://id529.github.io/</a>, so a lot of the logistical details and overview material (including our slides and lecture recordings) is best accessed on there, but I thought I’d take some space here to talk about what I thought really made this course different.</p>
-<p><a href="https://id529.github.io"></a><a href="../assets/img/2023-02-13-id529/course_website.png" class="lightbox" title="course website screenshot" data-gallery="quarto-lightbox-gallery-2"><img src="../assets/img/2023-02-13-id529/course_website.png" class="img-fluid" alt="course website screenshot"></a></p>
-<section id="course-tracks" class="level2">
-<h2 class="anchored" data-anchor-id="course-tracks">Course Tracks</h2>
-<p>Firstly, I think we were completely committed to creating an affirmative environment for the students. We emphasized for our students that there were different “tracks” through which one could take this whirlwind of a two-week short-course, and those were</p>
+
+<p>In Fall 2022, my colleague, mentor, and supervisor Jarvis Chen asked me if I
+wanted to teach a course about R for the Population Health Science (PHS) PhD
+program at Harvard. This request came about because the PHS students had
+expressed in prior years’ surveys an uncomfortability with programming and that
+their coursework gradually transitioned from not expecting them to be able to
+program to suddenly expecting them to be able to program with no instruction on
+the topic. Based on the lectures on <a href="https://github.com/ctesta01/longitudinal_eda_talk/"><em>Exploratory Data Visualization for Longitudinal
+Data Analysis</em></a>, my 
+work founding, lecturing for and coordinating <a href="https://rug-at-hdsi.org/">the R User Group at the Harvard
+Data Science Initiative</a>, and lecturing at the <a href="https://ctesta.com/articles/2022-10/phdgp2">Public Health
+Disparities Geocoding Project 2.0</a> Jarvis thought I was a 
+good choice for an instructor and the right person to design the course curriculum.</p>
+
+<p>We formed an absolutely fantastic teaching team between Jarvis, myself, Dean Marengi,
+and Amanda Hernandez with everyone contributing to create what I think became a 
+fantastic course. Our course website is online here <a href="https://id529.github.io/">https://id529.github.io/</a>, so a lot of the logistical
+details and overview material (including our slides and lecture recordings) is
+best accessed on there, but I thought I’d take some space here to talk about
+what I thought really made this course different.</p>
+
+<p><a href="https://id529.github.io"><img src="/assets/img/2023-02-13-id529/course_website.png" alt="course website screenshot" /></a></p>
+
+<h2 id="course-tracks">Course Tracks</h2>
+
+<p>Firstly, I think we were completely committed to creating an affirmative environment
+for the students. We emphasized for our students that there were different “tracks” 
+through which one could take this whirlwind of a two-week short-course, and those were</p>
+
 <ul>
-<li>Beginner/Novice</li>
-<li>Data Visualization</li>
-<li>Data Cleaning/Management and Working with Codebooks</li>
-<li>Programming and Software Engineering</li>
-<li>Other Niche Topics in R</li>
+  <li>Beginner/Novice</li>
+  <li>Data Visualization</li>
+  <li>Data Cleaning/Management and Working with Codebooks</li>
+  <li>Programming and Software Engineering</li>
+  <li>Other Niche Topics in R</li>
 </ul>
-<p>We were emphatic about communicating that we just wanted to see that students challenged themselves to grow through the in-class work and homework, and did as much as we possibly could to take the pressure and anxiety of grades off the table. We were sure to provide constructive and encouraging feedback on their work, but for the most part as long as we saw that students were making a good-faith effort to learn new skills we were eager to give them As on their work and in the class so they could focus on learning, not worrying about grades.</p>
-</section>
-<section id="affirmations" class="level2">
-<h2 class="anchored" data-anchor-id="affirmations">Affirmations</h2>
-<p>Several days throughout the course, we took time out of class to go over these affirmations designed to help combat imposter syndrome. One student told me that this was a refreshing change from the “sink-or-swim” Python programming classes they had encountered elsewhere, and they had incorporated these statements into their morning meditation practice — which I consider an absolute win!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/affirmations.jpg" class="lightbox" title="Here are some affirmations that can help you to reframe your thoughts and let go of any negative self-doubt or impostor syndrome that you may be feeling. I am capable and competent. I am worthy and deserving of success. I trust in my abilities and the effort I put forth. I am enough, exactly as I am. I am learning and growing with each challenge I face. It’s important to remember that everyone experiences moments of self-doubt and uncertainty, and it’s okay to not feel confident all the time. The key is to recognize and acknowledge those feelings, and then remind ourselves of our strengths and capabilities." data-gallery="quarto-lightbox-gallery-3"><img src="../assets/img/2023-02-13-id529/affirmations.jpg" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">Here are some affirmations that can help you to reframe your thoughts and let go of any negative self-doubt or impostor syndrome that you may be feeling. I am capable and competent. I am worthy and deserving of success. I trust in my abilities and the effort I put forth. I am enough, exactly as I am. I am learning and growing with each challenge I face. It’s important to remember that everyone experiences moments of self-doubt and uncertainty, and it’s okay to not feel confident all the time. The key is to recognize and acknowledge those feelings, and then remind ourselves of our strengths and capabilities.</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="memes" class="level2">
-<h2 class="anchored" data-anchor-id="memes">Memes</h2>
-<p>Throughout the class, we were sure to use a lot of wholesome memes — and I suppose that might seem kind of silly at first glance, but I think it helped create a fun, vibrant atmosphere where tensions were lowered and people felt like it was OK to make a mistake!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/memes.png" class="lightbox" title="some memes used in class" data-gallery="quarto-lightbox-gallery-4"><img src="../assets/img/2023-02-13-id529/memes.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">some memes used in class</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="real-time-feedback-surveys" class="level2">
-<h2 class="anchored" data-anchor-id="real-time-feedback-surveys">Real-Time Feedback Surveys</h2>
-<p>Another aspect in which we were different from the usual class was our goal from the outset to correct and gauge how the course was going as we went along. We circulated surveys with the students on the first day and then again on the third day that allowed us to check what the students were most eager to get out of the class, how they thought it was going, and whether they thought we should change the pacing at all. Most students thought that the pacing was a little fast, so we worked to slow down the curriculum for the remainder of the course, adding more time for discussion and making sure we focused on the fundamentals and essentials so that our students would get the most bang-for-their-buck (their buck being the tuition they pay Harvard and the opportunity cost associated with the time they spent in our classroom as opposed to anywhere else in the world they could be enjoying themselves).</p>
-<p>Though we did have some standard run-of-the-mill Qualtrics surveys we gave to the students, we also had some interactive real-time Menti surveys that both the students and instructors really enjoyed.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/menti-1-results.png" class="lightbox" title="a bunch of bubbles representing the backgrounds of each of our students" data-gallery="quarto-lightbox-gallery-5"><img src="../assets/img/2023-02-13-id529/menti-1-results.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">a bunch of bubbles representing the backgrounds of each of our students</figcaption><p></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/menti-2.jpg" class="lightbox" title="survey results asking the students about what skill level they are, with cat gifs representing each level" data-gallery="quarto-lightbox-gallery-6"><img src="../assets/img/2023-02-13-id529/menti-2.jpg" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">survey results asking the students about what skill level they are, with cat gifs representing each level</figcaption><p></p>
-</figure>
-</div>
-<p>I was really surprised at just how appreciative the students were. When we were honest about asking them to bear with us as we were teaching the course for the first time, some students said they felt privileged to be part of the inaugural class. Similarly, as a result of asking students to fill out surveys to gauge how the students were feeling, the students expressed appreciation that we were willing to change the pacing of our course to meet them where they’re at.</p>
-</section>
-<section id="github-classroom" class="level2">
-<h2 class="anchored" data-anchor-id="github-classroom">GitHub Classroom</h2>
-<p>One of our major goals was to teach the students how to use GitHub and get them actively using it during the timeframe of the course — so to us, it made sense to use GitHub Classroom to share assignments as template repositories that students could build off of. That said, it was a very new process for those of us on the teaching team and we weren’t entirely certain how it would go. That said, I think it went fantastically! It was absolutely incredible to see how willing the students were to learn how to use GitHub, many often pushing themselves to set things up the “right way” (with SSH-key authentication) and learning Git commands even though there are buttons for most basic functions available in RStudio. It was really fantastic to see students who had never even thought about using GitHub going all the way from setting up accounts, creating repositories, and thoughtfully using markdown to document and supplement the code in their homework repositories.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/github_classroom.png" class="lightbox" title="screenshot of GitHub classroom repository" data-gallery="quarto-lightbox-gallery-7"><img src="../assets/img/2023-02-13-id529/github_classroom.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">screenshot of GitHub classroom repository</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="google-docs" class="level2">
-<h2 class="anchored" data-anchor-id="google-docs">Google Docs</h2>
-<p>One of the things that worked incredibly well for facilitating class discussions was sharing a Google Doc that students could ask questions in anonymously and the instructional staff or lecturer would respond as soon as they could during class. This made it so students didn’t have to feel shy about if their questions would make them look foolish or silly or anything like that, but instead to ask anything that they thought might be beneficial for them to hear about. Students communicated to us in their feedback that they really appreciated this mode of Q&amp;A!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/google_docs.png" class="lightbox" title="example of one of the days google docs" data-gallery="quarto-lightbox-gallery-8"><img src="../assets/img/2023-02-13-id529/google_docs.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">example of one of the days google docs</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="hodu" class="level2">
-<h2 class="anchored" data-anchor-id="hodu">Hodu</h2>
-<p>In an effort to keep things light and upbeat, we incorporated my charming dog Hodu as much as possible, which students cheered and celebrated to a degree that made me so happy we had thought to include him.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/hodu tips.png" class="lightbox" title="four slides from the class featuring Hodu tips" data-gallery="quarto-lightbox-gallery-9"><img src="../assets/img/2023-02-13-id529/hodu tips.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">four slides from the class featuring Hodu tips</figcaption><p></p>
-</figure>
-</div>
-<p>We even brought Hodu to school to let the students enjoy being in his presence for a while. I think the students who stuck around that Friday evening really enjoyed meeting him and his brother Sabre who my wife and I were also petsitting at the time.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/hodu_backpack.JPG" class="lightbox" title="hodu doing ‘piggyback’ on my back" data-gallery="quarto-lightbox-gallery-10"><img src="../assets/img/2023-02-13-id529/hodu_backpack.JPG" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">hodu doing ‘piggyback’ on my back</figcaption><p></p>
-</figure>
-</div>
-<p>Some students even incorporated Hodu into their final projects in creative ways. One of my favorites was one student’s innovation on the Hodu Tip concept —&nbsp;when describing something a programmer shouldn’t do, they said that be more of a “No-du Tip”!</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/thanks_for_listening.png" class="lightbox" title="one of the slides from our student presentations" data-gallery="quarto-lightbox-gallery-11"><img src="../assets/img/2023-02-13-id529/thanks_for_listening.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">one of the slides from our student presentations</figcaption><p></p>
-</figure>
-</div>
-</section>
-<section id="fun-activities" class="level2">
-<h2 class="anchored" data-anchor-id="fun-activities">Fun Activities</h2>
-<p>We wanted to make sure that we didn’t have the students just sitting for four hours every day, so we were sure to break things up with stretch-breaks and occasionally structured activities. One of my favorite activities we came up with was a QR-code based activity where students scanned QR codes in the hallway that linked them to datasets that contained “secret messages.” Once they got their datasets and instructions, they had to figure out how to uncover the secret message using <code>ggplot2</code> and possibly some mathematical or programmatic transformations of the data.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/phs_rules.png" class="lightbox" title="Population Health Science Rules" data-gallery="quarto-lightbox-gallery-12"><img src="../assets/img/2023-02-13-id529/phs_rules.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">Population Health Science Rules</figcaption><p></p>
-</figure>
-</div>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/setwd.png" class="lightbox" title="If the first line of your script is setwd I will come into your office and set your computer on fire" data-gallery="quarto-lightbox-gallery-13"><img src="../assets/img/2023-02-13-id529/setwd.png" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">If the first line of your script is setwd I will come into your office and set your computer on fire</figcaption><p></p>
-</figure>
-</div>
-<p>The second of these messages comes from this famous tidyverse.com blogpost by Jenny Bryan: <a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/" class="uri">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a></p>
-<p>One activity that I particularly enjoyed was the “Bonus Extra Credit” on their first assignment with <code>ggplot2</code> where we encouraged them to “Fancy Your Figure”. We did this because we believe that when you channel your creative instincts and focus on bending <code>ggplot2</code> to your will, you end up learning a lot along the way including aspects of <code>ggplot2</code> that you might not otherwise learn so soon and which may prove useful to you.</p>
-<p>One student’s submission was particularly fantastic, and I have to give them props for committing so hard to their concept.</p>
-<div class="quarto-figure quarto-figure-center">
-<figure class="figure">
-<p><a href="../assets/img/2023-02-13-id529/depression_in_NHANES.jpg" class="lightbox" title="Depression status by age in the NHANES sample; the background has Elmo on fire, the colors are red themed, and the text is in an old gothic style font" data-gallery="quarto-lightbox-gallery-14"><img src="../assets/img/2023-02-13-id529/depression_in_NHANES.jpg" class="img-fluid figure-img"></a></p>
-<p></p><figcaption class="figure-caption">Depression status by age in the NHANES sample; the background has Elmo on fire, the colors are red themed, and the text is in an old gothic style font</figcaption><p></p>
-</figure>
-</div>
-<p>Another activity that I think had everybody enthralled was a Shiny-app simulated Rock Paper Scissors Lizard Spock tournament in which we gave away a copy of the <em>R for Data Science</em> book by Hadley Wickham and Garrett Grolemund!</p>
-<iframe width="560" height="315" src="https://www.youtube.com/embed/fR90EA7FTV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen="">
-</iframe>
-<p>The code behind the app are available on my GitHub here: <a href="https://github.com/ctesta01/RPSLS/" class="uri">https://github.com/ctesta01/RPSLS/</a> and the app is online here: <a href="https://ctesta.shinyapps.io/RPSLS/" class="uri">https://ctesta.shinyapps.io/RPSLS/</a></p>
-</section>
-<section id="course-outcomes" class="level2">
-<h2 class="anchored" data-anchor-id="course-outcomes">Course Outcomes</h2>
-<p>Besides the students performing spectacularly and giving stellar final presentations, we also collected measurable data through our first-day and final survey on how comfortable students felt with each of the key skills the course aimed to teach.</p>
-<p><img src="../assets/img/2023-02-13-id529/before_and_after_comfort_skill.svg" width="125%"></p>
+
+<p>We were emphatic about communicating that we just wanted to see that students
+challenged themselves to grow through the in-class work and homework, and did
+as much as we possibly could to take the pressure and anxiety of grades off the
+table.  We were sure to provide constructive and encouraging feedback on their
+work, but for the most part as long as we saw that students were making a
+good-faith effort to learn new skills we were eager to give them As on their
+work and in the class so they could focus on learning, not worrying about
+grades.</p>
+
+<h2 id="affirmations">Affirmations</h2>
+
+<p>Several days throughout the course, we took time out of class to go over
+these affirmations designed to help combat imposter syndrome.  One student
+told me that this was a refreshing change from the “sink-or-swim” Python 
+programming classes they had encountered elsewhere, and they had incorporated
+these statements into their morning meditation practice — which I consider 
+an absolute win!</p>
+
+<p><img src="/assets/img/2023-02-13-id529/affirmations.jpg" alt="Here are some affirmations that can help you to reframe your thoughts and let go of any negative self-doubt or impostor syndrome that you may be feeling. I am capable and competent. I am worthy and deserving of success. I trust in my abilities and the effort I put forth. I am enough, exactly as I am. I am learning and growing with each challenge I face. It’s important to remember that everyone experiences moments of self-doubt and uncertainty, and it’s okay to not feel confident all the time. The key is to recognize and acknowledge those feelings, and then remind ourselves of our strengths and capabilities." /></p>
+
+<h2 id="memes">Memes</h2>
+
+<p>Throughout the class, we were sure to use a lot of wholesome memes — and
+I suppose that might seem kind of silly at first glance, but I think it 
+helped create a fun, vibrant atmosphere where tensions were lowered and 
+people felt like it was OK to make a mistake!</p>
+
+<p><img src="/assets/img/2023-02-13-id529/memes.png" alt="some memes used in class" /></p>
+
+<h2 id="real-time-feedback-surveys">Real-Time Feedback Surveys</h2>
+
+<p>Another aspect in which we were different from the usual class was our goal
+from the outset to correct and gauge how the course was going as we went along.
+We circulated surveys with the students on the first day and then again on the
+third day that allowed us to check what the students were most eager to get out
+of the class, how they thought it was going, and whether they thought we should
+change the pacing at all.  Most students thought that the pacing was a little
+fast, so we worked to slow down the curriculum for the remainder of the course, 
+adding more time for discussion and making sure we focused on the fundamentals and 
+essentials so that our students would get the most bang-for-their-buck (their
+buck being the tuition they pay Harvard and the opportunity cost associated with
+the time they spent in our classroom as opposed to anywhere else in the world 
+they could be enjoying themselves).</p>
+
+<p>Though we did have some standard run-of-the-mill Qualtrics surveys we gave
+to the students, we also had some interactive real-time Menti surveys that
+both the students and instructors really enjoyed.</p>
+
+<p><img src="/assets/img/2023-02-13-id529/menti-1-results.png" alt="a bunch of bubbles representing the backgrounds of each of our students" /></p>
+
+<p><img src="/assets/img/2023-02-13-id529/menti-2.jpg" alt="survey results asking the students about what skill level they are, with cat gifs representing each level" /></p>
+
+<p>I was really surprised at just how appreciative the students were.  When we
+were honest about asking them to bear with us as we were teaching the course
+for the first time, some students said they felt privileged to be part of the
+inaugural class. Similarly, as a result of asking students to fill out surveys
+to gauge how the students were feeling, the students expressed appreciation
+that we were willing to change the pacing of our course to meet them where
+they’re at.</p>
+
+<h2 id="github-classroom">GitHub Classroom</h2>
+
+<p>One of our major goals was to teach the students how to use GitHub and get them
+actively using it during the timeframe of the course — so to us, it made sense
+to use GitHub Classroom to share assignments as template repositories that
+students could build off of.  That said, it was a very new process for those of
+us on the teaching team and we weren’t entirely certain how it would go. That
+said, I think it went fantastically!  It was absolutely incredible to see how
+willing the students were to learn how to use GitHub, many often pushing
+themselves to set things up the “right way” (with SSH-key authentication) and
+learning Git commands even though there are buttons for most basic functions
+available in RStudio.  It was really fantastic to see students who had never
+even thought about using GitHub going all the way from setting up accounts,
+creating repositories, and thoughtfully using markdown to document and
+supplement the code in their homework repositories.</p>
+
+<p><img src="/assets/img/2023-02-13-id529/github_classroom.png" alt="screenshot of GitHub classroom repository" /></p>
+
+<h2 id="google-docs">Google Docs</h2>
+
+<p>One of the things that worked incredibly well for facilitating class
+discussions was sharing a Google Doc that students could ask questions in
+anonymously and the instructional staff or lecturer would respond as soon as
+they could during class.  This made it so students didn’t have to feel shy
+about if their questions would make them look foolish or silly or anything like
+that, but instead to ask anything that they thought might be beneficial for
+them to hear about. Students communicated to us in their feedback that they 
+really appreciated this mode of Q&amp;A!</p>
+
+<p><img src="/assets/img/2023-02-13-id529/google_docs.png" alt="example of one of the days google docs" /></p>
+
+<h2 id="hodu">Hodu</h2>
+
+<p>In an effort to keep things light and upbeat, we incorporated my charming dog
+Hodu as much as possible, which students cheered and celebrated to a degree
+that made me so happy we had thought to include him.</p>
+
+<p><img src="/assets/img/2023-02-13-id529/hodu tips.png" alt="four slides from the class featuring Hodu tips" /></p>
+
+<p>We even brought Hodu to school to let the students enjoy being in his presence for a while. 
+I think the students who stuck around that Friday evening really enjoyed meeting him 
+and his brother Sabre who my wife and I were also petsitting at the time.</p>
+
+<p><img src="/assets/img/2023-02-13-id529/hodu_backpack.JPG" alt="hodu doing 'piggyback' on my back" /></p>
+
+<p>Some students even incorporated Hodu into their final projects in creative ways. 
+One of my favorites was one student’s innovation on the Hodu Tip concept — when 
+describing something a programmer shouldn’t do, they said that be more of a 
+“No-du Tip”!</p>
+
+<p><img src="/assets/img/2023-02-13-id529/thanks_for_listening.png" alt="one of the slides from our student presentations" /></p>
+
+<h2 id="fun-activities">Fun Activities</h2>
+
+<p>We wanted to make sure that we didn’t have the students just sitting for four hours
+every day, so we were sure to break things up with stretch-breaks and occasionally 
+structured activities.  One of my favorite activities we came up with was a QR-code
+based activity where students scanned QR codes in the hallway that linked
+them to datasets that contained “secret messages.” Once they got their datasets
+and instructions, they had to figure out how to uncover the secret message using
+<code class="language-plaintext highlighter-rouge">ggplot2</code> and possibly some mathematical or programmatic transformations of the
+data.</p>
+
+<p><img src="/assets/img/2023-02-13-id529/phs_rules.png" alt="Population Health Science Rules" /></p>
+
+<p><img src="/assets/img/2023-02-13-id529/setwd.png" alt="If the first line of your script is setwd I will come into your office and set your computer on fire" /></p>
+
+<p>The second of these messages comes from this famous tidyverse.com blogpost by Jenny Bryan:
+<a href="https://www.tidyverse.org/blog/2017/12/workflow-vs-script/">https://www.tidyverse.org/blog/2017/12/workflow-vs-script/</a></p>
+
+<p>One activity that I particularly enjoyed was the “Bonus Extra Credit” on their first
+assignment with <code class="language-plaintext highlighter-rouge">ggplot2</code> where we encouraged them to “Fancy Your Figure”.  We did
+this because we believe that when you channel your creative instincts and focus on 
+bending <code class="language-plaintext highlighter-rouge">ggplot2</code> to your will, you end up learning a lot along the way including 
+aspects of <code class="language-plaintext highlighter-rouge">ggplot2</code> that you might not otherwise learn so soon and which may prove
+useful to you.</p>
+
+<p>One student’s submission was particularly fantastic, and I have to give them props for 
+committing so hard to their concept.</p>
+
+<p><img src="/assets/img/2023-02-13-id529/depression_in_NHANES.jpg" alt="Depression status by age in the NHANES sample; the background has Elmo on fire, the colors are red themed, and the text is in an old gothic style font" /></p>
+
+<p>Another activity that I think had everybody enthralled was a Shiny-app simulated
+Rock Paper Scissors Lizard Spock tournament in which we gave away a copy of the 
+<em>R for Data Science</em> book by Hadley Wickham and Garrett Grolemund!</p>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/fR90EA7FTV8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen=""></iframe>
+
+<p>The code behind the app are available on my GitHub here: <a href="https://github.com/ctesta01/RPSLS/">https://github.com/ctesta01/RPSLS/</a> 
+and the app is online here: <a href="https://ctesta.shinyapps.io/RPSLS/">https://ctesta.shinyapps.io/RPSLS/</a></p>
+
+<h2 id="course-outcomes">Course Outcomes</h2>
+
+<p>Besides the students
+performing spectacularly and giving stellar final presentations, we also
+collected measurable data through our first-day and final survey on how
+comfortable students felt with each of the key skills the course aimed to
+teach.</p>
+
+<p><img src="/assets/img/2023-02-13-id529/before_and_after_comfort_skill.svg" width="125%" /></p>
+
 <p>(For the above figure, you might want to Right Click -&gt; Open Image In New Tab to see it full screen).</p>
-<p>Not only is there a visible shift in students’ reported comfort level across these different skills, but this shift turns out to be statistically significant in every case. I’m so proud of how much our students learned!</p>
-<p><img src="../assets/img/2023-02-13-id529/statistical_significance.svg" width="100%"></p>
-<p>Lastly, we asked students how likely they are to recommend the course to a friend, and the students who responded to our survey were overwhelmingly likely to encourage their friends to take the class, with almost 90% saying they would strongly recommend the class.</p>
-<p><img src="../assets/img/2023-02-13-id529/recommend_figure_pct.svg" width="100%"></p>
 
+<p>Not only is there a visible shift in students’ reported comfort level across these different skills, 
+but this shift turns out to be statistically significant in every case. I’m so proud of how much 
+our students learned!</p>
 
-</section>
+<p><img src="/assets/img/2023-02-13-id529/statistical_significance.svg" width="100%" /></p>
 
-</main> <!-- /main -->
-<script id="quarto-html-after-body" type="application/javascript">
-window.document.addEventListener("DOMContentLoaded", function (event) {
-  const toggleBodyColorMode = (bsSheetEl) => {
-    const mode = bsSheetEl.getAttribute("data-mode");
-    const bodyEl = window.document.querySelector("body");
-    if (mode === "dark") {
-      bodyEl.classList.add("quarto-dark");
-      bodyEl.classList.remove("quarto-light");
-    } else {
-      bodyEl.classList.add("quarto-light");
-      bodyEl.classList.remove("quarto-dark");
-    }
-  }
-  const toggleBodyColorPrimary = () => {
-    const bsSheetEl = window.document.querySelector("link#quarto-bootstrap");
-    if (bsSheetEl) {
-      toggleBodyColorMode(bsSheetEl);
-    }
-  }
-  toggleBodyColorPrimary();  
-  const icon = "";
-  const anchorJS = new window.AnchorJS();
-  anchorJS.options = {
-    placement: 'right',
-    icon: icon
-  };
-  anchorJS.add('.anchored');
-  const clipboard = new window.ClipboardJS('.code-copy-button', {
-    target: function(trigger) {
-      return trigger.previousElementSibling;
-    }
-  });
-  clipboard.on('success', function(e) {
-    // button target
-    const button = e.trigger;
-    // don't keep focus
-    button.blur();
-    // flash "checked"
-    button.classList.add('code-copy-button-checked');
-    var currentTitle = button.getAttribute("title");
-    button.setAttribute("title", "Copied!");
-    let tooltip;
-    if (window.bootstrap) {
-      button.setAttribute("data-bs-toggle", "tooltip");
-      button.setAttribute("data-bs-placement", "left");
-      button.setAttribute("data-bs-title", "Copied!");
-      tooltip = new bootstrap.Tooltip(button, 
-        { trigger: "manual", 
-          customClass: "code-copy-button-tooltip",
-          offset: [0, -8]});
-      tooltip.show();    
-    }
-    setTimeout(function() {
-      if (tooltip) {
-        tooltip.hide();
-        button.removeAttribute("data-bs-title");
-        button.removeAttribute("data-bs-toggle");
-        button.removeAttribute("data-bs-placement");
-      }
-      button.setAttribute("title", currentTitle);
-      button.classList.remove('code-copy-button-checked');
-    }, 1000);
-    // clear code selection
-    e.clearSelection();
-  });
-  function tippyHover(el, contentFn) {
-    const config = {
-      allowHTML: true,
-      content: contentFn,
-      maxWidth: 500,
-      delay: 100,
-      arrow: false,
-      appendTo: function(el) {
-          return el.parentElement;
-      },
-      interactive: true,
-      interactiveBorder: 10,
-      theme: 'quarto',
-      placement: 'bottom-start'
-    };
-    window.tippy(el, config); 
-  }
-  const noterefs = window.document.querySelectorAll('a[role="doc-noteref"]');
-  for (var i=0; i<noterefs.length; i++) {
-    const ref = noterefs[i];
-    tippyHover(ref, function() {
-      // use id or data attribute instead here
-      let href = ref.getAttribute('data-footnote-href') || ref.getAttribute('href');
-      try { href = new URL(href).hash; } catch {}
-      const id = href.replace(/^#\/?/, "");
-      const note = window.document.getElementById(id);
-      return note.innerHTML;
-    });
-  }
-  const findCites = (el) => {
-    const parentEl = el.parentElement;
-    if (parentEl) {
-      const cites = parentEl.dataset.cites;
-      if (cites) {
-        return {
-          el,
-          cites: cites.split(' ')
-        };
-      } else {
-        return findCites(el.parentElement)
-      }
-    } else {
-      return undefined;
-    }
-  };
-  var bibliorefs = window.document.querySelectorAll('a[role="doc-biblioref"]');
-  for (var i=0; i<bibliorefs.length; i++) {
-    const ref = bibliorefs[i];
-    const citeInfo = findCites(ref);
-    if (citeInfo) {
-      tippyHover(citeInfo.el, function() {
-        var popup = window.document.createElement('div');
-        citeInfo.cites.forEach(function(cite) {
-          var citeDiv = window.document.createElement('div');
-          citeDiv.classList.add('hanging-indent');
-          citeDiv.classList.add('csl-entry');
-          var biblioDiv = window.document.getElementById('ref-' + cite);
-          if (biblioDiv) {
-            citeDiv.innerHTML = biblioDiv.innerHTML;
-          }
-          popup.appendChild(citeDiv);
-        });
-        return popup.innerHTML;
-      });
-    }
-  }
-});
-</script>
-</div> <!-- /content -->
-<script>var lightboxQuarto = GLightbox({"selector":".lightbox","openEffect":"zoom","descPosition":"bottom","loop":true,"closeEffect":"zoom"});</script>
+<p>Lastly, we asked students how likely they are to recommend the course to a friend, and
+the students who responded to our survey were overwhelmingly likely to encourage 
+their friends to take the class, with almost 90% saying they would strongly recommend the class.</p>
 
-
-
-</body></html>
+<p><img src="/assets/img/2023-02-13-id529/recommend_figure_pct.svg" width="100%" /></p>

@@ -1,0 +1,239 @@
+Seattle was so much fun!  I don't know how on Earth we did so much in just two days, but we did.
+
+As soon as we got off the plane, picked up our rental car and checked into our hotel, we were 
+super famished so we set out and found some amazing Mexican food pretty close to the airport 
+at El Cabrito. 
+
+:::{layout="[[1, 1], [1, 1], [1, 1], [1, 1]]"}
+
+![](/assets/img/2023-07-10-Seattle/mexicanfood1/IMG_8336.jpeg){group="1"} &nbsp;
+
+![](/assets/img/2023-07-10-Seattle/mexicanfood1/IMG_8340.jpeg){group="1"} &nbsp;
+
+![](/assets/img/2023-07-10-Seattle/mexicanfood1/IMG_8343.jpeg){group="1"} &nbsp;
+
+![](/assets/img/2023-07-10-Seattle/mexicanfood1/IMG_8344.jpeg){group="1"} &nbsp;
+
+![](/assets/img/2023-07-10-Seattle/mexicanfood1/IMG_8346.jpg){group="1"} &nbsp;
+:::
+
+Next up was the Chihuly Garden and Glass museum! The glass was the focal point,
+but the drinks in the garden were pretty great too:  the cold brew with
+pistachio foam, and frozen banana & kalamansi mai tais were pretty
+unforgettable. 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/chihuly/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+After we went to the Chihuly Garden and Glass exhibits we went to the Space Needle. 
+It was neat seeing all the history about its construction as we queued for the elevator,
+and the attendants' 41 second speeches that were perfectly timed to the elevator ride 
+were quite impressive.  Jane is working on her fear of glass bottom buildings ☺️
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/space_needle/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+
+For dinner, we headed over to the Capitol Hill neighborhood and met up with some friends
+at Oddfellows Cafe + Bar and then went around the corner for ice cream at Molly Moon's 
+Homemade Ice Cream. 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/dinner_day1/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+Day 2 
+--- 
+
+To start off our second day, we had to go to Temple Pastry since I'd heard it
+had some of the very best French pastries.  I loved the vibe and I picked up 
+that little travel coffee mug with the nice design on it as a souvenir.  Outside
+we met two cute Shibas that I think were minor gods of mischief. 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/temple_pastry/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+After our breakfast at Temple Pastry and getting lunch at Din Tai Fung, it was
+off to our friend's wedding:  our purpose for being in Seattle!  After walking
+in we immediately pounced on their dogs to say hi to them;  their names are
+Penguin (nickname: Gwen) and Nala. 
+
+The wedding was beautiful!  It was outdoors by a nice little stream on a farm house
+about 30 minutes from where we were staying. The bride's mother made these amazing
+glass blown sunflowers that were the table decorations, of which there must have been 
+over a 100. We were instructed to take those home, so those will be another
+nice keepsake of ours from this trip. 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/wedding/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+Day 3
+--- 
+
+For breakfast on the third day, we tried going one place but then saw it had over an hour wait, 
+so we got back in the car and went to Cheeky Cafe. We did have to wait a while for our food, but
+once it got to us it was to-die-for. Jane noticed that there was spicy kimchi mac & cheese on the menu
+and obviously we were going to get that.  It was *incredible!* Very creamy, right level of spicy, 
+umami, delicious. And the wasabi dressing side-salad was pretty good too, actually.  I got
+their french toast and Jane got their "Cheeky french toast" which was stuffed with bananas. Both 
+were great! 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/cheeky_cafe/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+Next we went to the Univeristy of Washington Arboretum and toured the Japanese Garden there. 
+It was perfect weather for it, in the low 70s with a cool breeze. We spent a lot of time just
+lounging in the gazebos. For the legal nerds:  "How do tortoises settle their disputes? Tort law!"
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/japanese_garden/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+We wanted to get inside for a while to cool off and relax, so we went over to Ada's Technical
+Books and Cafe and just read for a bit.  Outside of Ada's we spotted this really neat mural 
+made out of brightly colored floppy disks.  What a blast from the past! 
+After that we went over to Carmelo's Tacos and had a few more great tacos. 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/adas_and_tacos/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+You might be wondering "what was Hodu doing during all of this?"  Rest assured, he was
+living his best life, re-enacting Totoro and napping off the hot days in Boston at a 
+friend's place. 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/hodu/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
+
+Finally, and I still don't know how we survived doing this, but we took a
+red-eye back (9:30pm to 5:45am) so I could make my Monday morning 9am meeting. 
+
+::: {layout="[[1, 1], [1, 1], [1, 1], [1, 1], [1, 1]]"}
+```{r}
+#| results: asis
+#| echo: false
+base_path <- "/assets/img/2023-07-10-Seattle/redeye/"
+
+for (file in list.files(paste0("../", base_path), include.dirs = FALSE, pattern = ".*.[jpg,jpeg]")) {
+
+  filepath <- file.path(base_path, file)
+  cat(paste0("![](", base_path, file, "){group='1'} &nbsp;
+
+  "))
+}
+```
+:::
