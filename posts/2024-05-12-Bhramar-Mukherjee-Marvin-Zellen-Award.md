@@ -241,7 +241,7 @@ missingness patterns and/or bias-introducing-mechanisms.
 At once highlighting the merits and shortcomings of the field, 
 Mukherjee leaves us with significant food for thought:  it
 is simply not enough for biostatisticians who aspire to be 
-'data dreamsers' to live in an ivory tower focused solely on theoretical considerations when there is so much to contribute
+'data dreamers' to live in an ivory tower focused solely on theoretical considerations when there is so much to contribute
 to work on-the-ground that reshapes people's lives for the 
 better.  As she reminded me at the event's reception, for 
 Zelen and Lagakos to present their findings in a church's 
