@@ -47,6 +47,11 @@ She showed this figure from Fatumo, S., Chikowore, T., Choudhury, A. et al. A ro
 
 ![A graph showing side-by-side the proportion of genetic database participants by racial/ethnic group with the world composition; white/european populations are overrepresented, while Southeast Asian are barely visible in genetic database cohorts.](/assets/img/2024-05-12-Bhramar-Mukherjee/biobank_racial_ethnic_makeup.png)
 
+Driving home the point, she pointed out to us that her parents
+are Indian and hence in the barely represented
+South Asian portion of the above graph, and asked 
+"When will my parents have access to precision medicine?"
+
 ---
 
 On data inequities: 
