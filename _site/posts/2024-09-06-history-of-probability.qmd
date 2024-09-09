@@ -1,0 +1,10 @@
+Tuesday September 3rd, the first day of our semester, I needed to cover
+teaching for our professor teaching BST/BIOSTATS 230 Probability I, so as part of that
+I got to lecture on the history of probability as an academic field, which I thoroughly
+enjoyed. 
+
+I needed to stick roughly to the gist of his pre-existing slides, but I wanted to give some 
+of my own emphasis to what I presented, so I wrote some lecture notes to go along with 
+the slides. 
+
+[Please find them attached (2024-09-03-notes_for_day_1.pdf)](/assets/pdf/2024-09-03-notes_for_day_1.pdf).
