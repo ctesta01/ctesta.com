@@ -30,7 +30,7 @@ format:
 :::{#hero-heading}
 ## About Me {style="margin-top: -15px;"}
 
-Hello! I am a first year PhD student in the Department of Biostatistics at the 
+Hello! I am a second year PhD student in the Department of Biostatistics at the 
 Harvard T.H. Chan School of Public Health. My research interest areas
 include causal inference, infectious diseases, and spatial statistics.
 
