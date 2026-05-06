@@ -4,14 +4,21 @@ image: assets/img/profile.jpeg
 image-alt: "Pronouns: he/him"
 about: 
   id: hero-heading
+  image-width: '80%'
   template: trestles
   links: 
   - icon: github
     text: GitHub
     href: https://github.com/ctesta01
+  - icon: bluesky 
+    text: Bluesky 
+    href: https://bsky.app/profile/ctesta.bsky.social
   - icon: mastodon 
     text: Mastodon
     href: https://fediscience.org/@ctesta
+  - icon: photo
+    text: Flickr
+    href: https://www.flickr.com/photos/ctesta000/
   - icon: book
     text: Google Scholar
     href: https://scholar.google.com/citations?hl=en&user=_9VD8mkAAAAJ
@@ -35,9 +42,14 @@ Harvard T.H. Chan School of Public Health. My research interest areas
 focus on causal inference with applications to infectious disease, and more 
 broadly problems related to causal inference for social good.
 
-I am co-advised by [Nima Hejazi](https://nimahejazi.org/) and [Rajarshi Mukherjee](https://rajarshi-mukherjee24.github.io/)
+I am co-advised by [Nima Hejazi](https://nimahejazi.org/) and [Rajarshi Mukherjee](https://rajarshi-mukherjee24.github.io/).
 
-My research perspective is built upon several philosophical perspectives
+I also enjoy photography -- please feel free to check it out on my Flickr:
+
+<a data-flickr-embed="true" href="https://www.flickr.com/photos/ctesta000/53937114005/in/album-72177720319681100" title="Sunset view from the Rialto Bridge"><img src="https://live.staticflickr.com/65535/53937114005_f3647b5ea4_w.jpg" width="400" height="266" alt="Sunset view from the Rialto Bridge"/></a><script async src="//embedr.flickr.com/assets/client-code.js" charset="utf-8"></script>
+:::
+
+My research perspective is driven by several philosophical perspectives
 that I hold dear: 
 
   * In my work in social epidemiology and infectious disease epidemiology,
@@ -54,6 +66,7 @@ that I hold dear:
   should only benefit big corporations or the already-enfranchised. As such,
   I aspire to bring advanced machine learning methods into my causal inference
   work. This has led me to largely focus on the paradigm of Targeted Learning ([1](https://tlverse.org/tlverse-handbook/), [2](https://link.springer.com/book/10.1007/978-1-4419-9782-1)). 
+
 
 My present doctoral research projects include:
 
@@ -84,7 +97,6 @@ projects including:
   - DNA methylation & adversity: pathways from exposures to health inequities
   - Advancing novel methods to measure and analyze multiple types of discrimination for population health research
 - A COVID-19 Paper Series 
-:::
 
 --- 
 
