@@ -6,8 +6,10 @@
 
 <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
 
+<meta name="author" content="Christian Testa">
+<meta name="dcterms.date" content="2025-05-06">
 
-<title>Christian Testa</title>
+<title>Christian Testa - Instrumental Variables: Friend or Foe?</title>
 <style>
 code{white-space: pre-wrap;}
 span.smallcaps{font-variant: small-caps;}
@@ -23,21 +25,22 @@ ul.task-list li input[type="checkbox"] {
 </style>
 
 
-<script src="site_libs/quarto-nav/quarto-nav.js"></script>
-<script src="site_libs/quarto-nav/headroom.min.js"></script>
-<script src="site_libs/clipboard/clipboard.min.js"></script>
-<script src="site_libs/quarto-search/autocomplete.umd.js"></script>
-<script src="site_libs/quarto-search/fuse.min.js"></script>
-<script src="site_libs/quarto-search/quarto-search.js"></script>
-<meta name="quarto:offset" content="./">
-<script src="site_libs/quarto-html/quarto.js"></script>
-<script src="site_libs/quarto-html/popper.min.js"></script>
-<script src="site_libs/quarto-html/tippy.umd.min.js"></script>
-<link href="site_libs/quarto-html/tippy.css" rel="stylesheet">
-<link href="site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
-<script src="site_libs/bootstrap/bootstrap.min.js"></script>
-<link href="site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
+<script src="../site_libs/quarto-nav/quarto-nav.js"></script>
+<script src="../site_libs/quarto-nav/headroom.min.js"></script>
+<script src="../site_libs/clipboard/clipboard.min.js"></script>
+<script src="../site_libs/quarto-search/autocomplete.umd.js"></script>
+<script src="../site_libs/quarto-search/fuse.min.js"></script>
+<script src="../site_libs/quarto-search/quarto-search.js"></script>
+<meta name="quarto:offset" content="../">
+<script src="../site_libs/quarto-html/quarto.js"></script>
+<script src="../site_libs/quarto-html/popper.min.js"></script>
+<script src="../site_libs/quarto-html/tippy.umd.min.js"></script>
+<script src="../site_libs/quarto-html/anchor.min.js"></script>
+<link href="../site_libs/quarto-html/tippy.css" rel="stylesheet">
+<link href="../site_libs/quarto-html/quarto-syntax-highlighting.css" rel="stylesheet" id="quarto-text-highlighting-styles">
+<script src="../site_libs/bootstrap/bootstrap.min.js"></script>
+<link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
+<link href="../site_libs/bootstrap/bootstrap.min.css" rel="stylesheet" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "navbar",
   "copy-button": false,
@@ -65,15 +68,9 @@ ul.task-list li input[type="checkbox"] {
     "search-label": "Search"
   }
 }</script>
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-<script type="text/javascript">
-$(document).ready(function() {
-  $('#title-block-header .quarto-title').after('<p>Pronouns: he/him/his</p>');
-});
-</script>
 
 
-<link rel="stylesheet" href="styles.scss">
+<link rel="stylesheet" href="../styles.scss">
 </head>
 
 <body class="nav-fixed">
@@ -83,7 +80,7 @@ $(document).ready(function() {
     <nav class="navbar navbar-expand-lg " data-bs-theme="dark">
       <div class="navbar-container container-fluid">
       <div class="navbar-brand-container mx-auto">
-    <a class="navbar-brand" href="./index.html">
+    <a class="navbar-brand" href="../index.html">
     <span class="navbar-title">Christian Testa</span>
     </a>
   </div>
@@ -94,15 +91,15 @@ $(document).ready(function() {
           <div class="collapse navbar-collapse" id="navbarCollapse">
             <ul class="navbar-nav navbar-nav-scroll me-auto">
   <li class="nav-item">
-    <a class="nav-link active" href="./index.html" aria-current="page"> 
+    <a class="nav-link" href="../index.html"> 
 <span class="menu-text">Home</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./blog.html"> 
+    <a class="nav-link" href="../blog.html"> 
 <span class="menu-text">Blog</span></a>
   </li>  
   <li class="nav-item">
-    <a class="nav-link" href="./publications.html"> 
+    <a class="nav-link" href="../publications.html"> 
 <span class="menu-text">Publications</span></a>
   </li>  
 </ul>
@@ -117,91 +114,83 @@ $(document).ready(function() {
 <!-- sidebar -->
 <!-- margin-sidebar -->
     <div id="quarto-margin-sidebar" class="sidebar margin-sidebar">
-        <nav id="TOC" role="doc-toc" class="toc-active">
-    <h2 id="toc-title">On this page</h2>
-   
-  <ul>
-  <li><a href="#about-me" id="toc-about-me" class="nav-link active" data-scroll-target="#about-me">About Me</a></li>
-  </ul>
-</nav>
+        
     </div>
 <!-- main -->
 <main class="content" id="quarto-document-content">
 
-
-
-
-<div class="quarto-about-trestles content">
-  <div class="about-entity">
-    <img src="assets/img/profile.jpeg" alt="Pronouns: he/him" class="about-image
-  rounded " style="width: 20em;">
 <header id="title-block-header" class="quarto-title-block default">
 <div class="quarto-title">
-<h1 class="title">Christian Testa</h1>
-</div>
+<h1 class="title">Instrumental Variables: Friend or Foe?</h1>
+  <div class="quarto-categories">
+    <div class="quarto-category">causal inference</div>
+    <div class="quarto-category">statistics</div>
+    <div class="quarto-category">data science</div>
+    <div class="quarto-category">science of science</div>
+  </div>
+  </div>
+
+
+
 <div class="quarto-title-meta">
+
+    <div>
+    <div class="quarto-title-meta-heading">Author</div>
+    <div class="quarto-title-meta-contents">
+             <p>Christian Testa </p>
+          </div>
   </div>
+    
+    <div>
+    <div class="quarto-title-meta-heading">Published</div>
+    <div class="quarto-title-meta-contents">
+      <p class="date">May 6, 2025</p>
+    </div>
+  </div>
+  
+    
+  </div>
+  
+
+
 </header>
-    <div class="about-links">
-  <a href="https://github.com/ctesta01" class="about-link" rel="" target="">
-    <i class="bi bi-github"></i>
-     <span class="about-link-text">GitHub</span>
-  </a>
-  <a href="https://fediscience.org/@ctesta" class="about-link" rel="" target="">
-    <i class="bi bi-mastodon"></i>
-     <span class="about-link-text">Mastodon</span>
-  </a>
-  <a href="https://scholar.google.com/citations?hl=en&amp;user=_9VD8mkAAAAJ" class="about-link" rel="" target="">
-    <i class="bi bi-book"></i>
-     <span class="about-link-text">Google Scholar</span>
-  </a>
-</div>
-  </div>
-  <div class="about-contents"><div id="hero-heading">
-<section id="about-me" class="level2" style="margin-top: -15px;">
-<h2 style="margin-top: -15px;" data-anchor-id="about-me">About Me</h2>
-<p>Hello! I am a third year PhD student in the Department of Biostatistics at the Harvard T.H. Chan School of Public Health. My research interest areas focus on causal inference with applications to infectious disease, and more broadly problems related to causal inference for social good.</p>
-<p>I am co-advised by <a href="https://nimahejazi.org/">Nima Hejazi</a> and <a href="https://rajarshi-mukherjee24.github.io/">Rajarshi Mukherjee</a></p>
-<p>My research perspective is built upon several philosophical perspectives that I hold dear:</p>
-<ul>
-<li>In my work in social epidemiology and infectious disease epidemiology, I have often found that the highest quality of evidence necessarily came from observational studies where randomization is not feasible, practical, or ethical. This has led me to focus on causal inference methods for observational or semi-observational studies.</li>
-<li>Unfortunately, often studies rely on cross-sectional data (i.e., data collected at a single timepoint), which can obscure causal relationships. As a result, I prefer to focus on studies with time-varying exposures (often involving time-varying confounder-exposure feedback!).</li>
-<li>As an ethical imperative, I do not believe advanced machine learning methods should only benefit big corporations or the already-enfranchised. As such, I aspire to bring advanced machine learning methods into my causal inference work. This has led me to largely focus on the paradigm of Targeted Learning (<a href="https://tlverse.org/tlverse-handbook/">1</a>, <a href="https://link.springer.com/book/10.1007/978-1-4419-9782-1">2</a>).</li>
-</ul>
-<p>My present doctoral research projects include:</p>
-<ul>
-<li>Extending the longitudinal modified treatment policies framework to efficiently estimate subgroup-specific effects with applications to how deforestation impacts malaria incidence in Madagascar.</li>
-<li>Leveraging positive predictive value as a measure of variable importance to study symptom log data in COVID-19 platform trials.</li>
-</ul>
-<p>I am also working in a research assistantship capacity with the Mass General Brigham hospital supervised by <a href="https://biostatistics.massgeneral.org/faculty/brian-healy-phd/">Dr.&nbsp;Brian Healy</a>, and we are focused on</p>
-<ul>
-<li>Evaluating the potentially beneficial or harmful effects of blood transfusion on patients in the ICU.</li>
-<li>Answering practical questions about the longitudinal course of multiple sclerosis and other neurological degenerative diseases such as Alzheimer’s and dementia.</li>
-</ul>
-<hr>
-<p>Recently I worked (2020-2023) as a statistical data analyst with Nancy Krieger and Jarvis Chen in the Department of Social and Behavioral Sciences at the Harvard T.H. Chan School of Public Health on projects including:</p>
-<ul>
-<li>The Public Health Disparities Geocoding Project 2.0</li>
-<li>Two NIH R01 grant funded projects:
-<ul>
-<li>DNA methylation &amp; adversity: pathways from exposures to health inequities</li>
-<li>Advancing novel methods to measure and analyze multiple types of discrimination for population health research</li>
-</ul></li>
-<li>A COVID-19 Paper Series</li>
-</ul>
-</section>
-</div></div>
-</div>
 
-<hr>
-<p>Prior, I worked (2017-2020) in the Department of Global Health and Population at Harvard T.H. Chan School of Public Health with Joshua Soloman (now at Stanford) and Nicolas Menzies in the Prevention Policy Modeling Lab as a data analyst and programmer on several CDC grant funded projects.</p>
-<p>Those projects included:</p>
-<ul>
-<li>A web-app to allow users to interact with a Bayesian simulation model of tuberculosis in the US 50 states and DC under user-configurable scenarios.</li>
-<li>Papers on gonorrhea, syphilis, and tuberculosis transmission in US contexts and implications for strategies for prevention.</li>
-</ul>
-<p>I received my Bachelors of Science in Mathematics from Tufts University in 2017.</p>
 
+<p>I’ve been trying to read more carefully about instrumental variables (IV) and make up my mind about when IV arguments are scientifically convincing.</p>
+<p>Here’s a tension I keep running into:</p>
+<p>Should the scientific question alone determine the causal parameter of interest?</p>
+<p>Or is it legitimate for the target parameter to reflect an interplay between scientific interest and the identifying assumptions we actually find tenable?</p>
+<p>IVs can be difficult to interpret when instruments are weak, who “compliers” are is opaque, exclusion restrictions are debatable, or linear models are used in settings where the true data-generating process may be nonlinear.</p>
+<p>On the other hand, when an entire body of (aspirationally causal) literature rests on methods that try to close backdoor paths, IVs offer a genuinely different identification strategy. That seems valuable for evidence triangulation, even if IV analyses have their criticisms.</p>
+<p><em>What do you think? Are you a big IV proponent? Are you an IV critic?</em></p>
+<p><em>When do you find IV evidence persuasive?</em></p>
+<p>Some literature I’ve been reading &amp; re-reading:</p>
+<ul>
+<li><p>Hernán, Miguel A., and James M. Robins. 2006. “<a href="https://pubmed.ncbi.nlm.nih.gov/16755261/">Instruments for Causal Inference: An Epidemiologist’s Dream?</a>” <em>Epidemiology</em> 17(4): 360–372.</p></li>
+<li><p>Swanson, Sonja A., and Miguel A. Hernán. 2018. “<a href="https://academic.oup.com/ije/article/47/4/1289/3095892">The Challenging Interpretation of Instrumental Variable Estimates under Monotonicity</a>.” <em>International Journal of Epidemiology</em> 47(4): 1289–1297.</p></li>
+<li><p>Swanson, Sonja A., and Miguel A. Hernán. 2014. “<a href="https://pmc.ncbi.nlm.nih.gov/articles/PMC4285626/">Think Globally, Act Globally: An Epidemiologist’s Perspective on Instrumental Variable Estimation</a>.” <em>Statistical Science</em> 29(3): 371–374.</p></li>
+<li><p>Levis, Alexander W., Edward H. Kennedy, and Luke Keele. 2024. “<a href="https://arxiv.org/abs/2402.09332">Nonparametric Identification and Efficient Estimation of Causal Effects with Instrumental Variables</a>.” <em>arXiv preprint</em> arXiv:2402.09332.</p></li>
+<li><p>Fonseca, Yuri, Caio Peixoto, and Yuri Saporito. 2024. “<a href="https://arxiv.org/abs/2402.05639">Nonparametric Instrumental Variable Regression through Stochastic Approximate Gradients</a>.” <em>Advances in Neural Information Processing Systems (NeurIPS 2024)</em>.</p></li>
+</ul>
+<p>Some choice quotes on the topic of instrumental variables:</p>
+<p>From Swanson and Hernán 2014</p>
+<blockquote class="blockquote">
+<p>Imbens states we are “limited in the questions we can answer credibly and precisely.” We agree, but there are differences between the questions we can answer and the questions we want answered. Choosing only answerable questions (e.g., identifying the LATE in some settings) can mislead decision-making efforts: our estimates may be misinterpreted as directly relevant to a decision when in fact they are only tangentially related.</p>
+</blockquote>
+<p>From Levis, Kennedy, and Keele 2024</p>
+<blockquote class="blockquote">
+<p>Often in the literature, it is noted that the choice of estimand should be based on a scientific judgement and should reflect the specific research question. However, it is often the case that there is some interplay between the estimand and the plausibility of the identification assumptions. Nowhere is this more true than in an IV analysis.</p>
+</blockquote>
+<p><em>What do you think? Do you have a favorite instrumental variable?</em></p>
+<p>Tell me it’s not rainfall!</p>
+<div class="quarto-figure quarto-figure-center">
+<figure class="figure">
+<p><img src="../assets/img/2026-05-06/rainfall.jpg" class="img-fluid figure-img"></p>
+<figcaption>An infographic from blogpost Rain, Rain, Go away: 192 potential exclusion-restriction violations for studies using weather as an instrumental variable (Published at AJPS) by Jonathan Mellon depicting commonly used Instrumental Variables. To many people’s chagrin, Rainfall is a very commonly used instrument, though some have raised concerns about the use of rainfall when it is only a weak instrument.</figcaption>
+</figure>
+</div>
+<p><a href="https://www.jonathanmellon.com/publication/rain/" class="uri">https://www.jonathanmellon.com/publication/rain/</a></p>
+<p>#CausalInference #InstrumentalVariables #Econometrics #Statistics #DataScience #HealthPolicy</p>
 
 
 
@@ -226,6 +215,13 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
   toggleBodyColorPrimary();  
+  const icon = "";
+  const anchorJS = new window.AnchorJS();
+  anchorJS.options = {
+    placement: 'right',
+    icon: icon
+  };
+  anchorJS.add('.anchored');
   const isCodeAnnotation = (el) => {
     for (const clz of el.classList) {
       if (clz.startsWith('code-annotation-')) {                     
@@ -585,6 +581,8 @@ window.document.addEventListener("DOMContentLoaded", function (event) {
     }
   }
 });
+</script>
+<script src="https://utteranc.es/client.js" repo="ctesta01/ctesta.com" issue-term="pathname" theme="github-light" crossorigin="anonymous" async="">
 </script>
 </div> <!-- /content -->
 
