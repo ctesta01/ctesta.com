@@ -2,13 +2,14 @@
 title: "Instrumental Variables: Friend or Foe?"
 author: "Christian Testa"
 date: "2025-05-06"
-categories: [causal inference, statistics, data science, science of science]
+categories: [causal inference, statistics, data science, science of science,
+  econometrics, instrumental variables, health policy]
 comments:
   utterances:
     repo: ctesta01/ctesta.com
 ---
 
-I’ve been trying to read more carefully about instrumental variables (IV) and make up my mind about when IV arguments are scientifically convincing.
+I’ve been trying to read more carefully about instrumental variables (IV) and make up my mind about when IV analyses are scientifically convincing.
 
 Here's a tension I keep running into: 
 
@@ -54,7 +55,12 @@ Tell me it's not rainfall!
 
 ![An infographic from blogpost Rain, Rain, Go away: 192 potential exclusion-restriction violations for studies using weather as an instrumental variable (Published at AJPS)  by Jonathan Mellon depicting commonly used Instrumental Variables.  To many people's chagrin, Rainfall is a very commonly used instrument, though some have raised concerns about the use of rainfall when it is only a weak instrument.](/assets/img/2026-05-06/rainfall.jpg)
 
-<https://www.jonathanmellon.com/publication/rain/>
+From Mellon, Jonathan. 2024. “[Rain, Rain, Go Away: 192 Potential Exclusion-Restriction Violations for Studies Using Weather as an Instrumental Variable](https://www.jonathanmellon.com/publication/rain/).” *American Journal of Political Science*. Available at [Wiley Online Library](https://onlinelibrary.wiley.com/doi/full/10.1111/ajps.12894).
 
+*What do you think?  Should IVs be banished and outcast from "rigorous science" or 
+are they useful?  Do you think researchers are putting dogma over pragmatism when
+it comes to IVs?*
 
-#CausalInference #InstrumentalVariables #Econometrics #Statistics #DataScience #HealthPolicy
+I welcome your thoughts -- please feel free to share via the newly enabled Utteranc.es comments
+system below 🙂
+
